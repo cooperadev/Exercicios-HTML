@@ -1,0 +1,550 @@
+@import url("https://fonts.googleapis.com/css2?family=Rufina&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rufina", serif;
+  font-size: 16.5%;
+}
+
+#container {
+  display: flexbox;
+}
+#container header {
+  background-image: url(images/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  width: 100%;
+  height: 90vh;
+}
+#container header .logoArea {
+  position: relative;
+}
+#container header .logoArea .logo {
+  width: 10vw;
+  height: 25vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  margin-top: 25vh;
+}
+#container header .logoArea img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  margin-top: 49vh;
+  color: whitesmoke;
+  font-family: "Raleway", sans-serif;
+}
+#container header .logoArea p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  margin-top: 60vh;
+  color: whitesmoke;
+  text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.4rem;
+}
+#container #products {
+  width: 100%;
+  height: 110vh;
+}
+#container #products .textCircle {
+  position: relative;
+  border-radius: 50%;
+}
+#container #products .textCircle pre {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: 8%;
+  margin-right: -50%;
+  transform: translate(-65%, -50%);
+  text-align: center;
+  color: white;
+  font-size: 1.1rem;
+  font-family: "Raleway", sans-serif;
+}
+#container #products .circleIMG {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -10%;
+}
+#container #products .productsArea {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  margin-left: 20vw;
+  margin-top: 5vh;
+  width: 60vw;
+  font-family: "Raleway", sans-serif;
+}
+#container #products .productsArea .imageCupcake {
+  width: 8vw;
+  margin-left: 6vw;
+}
+#container #products .productsArea .imageCroissant {
+  width: 10vw;
+  margin-top: 2vh;
+  margin-left: 5vw;
+}
+#container #products .productsArea .imageCoffee {
+  width: 12vw;
+  margin-top: 2vh;
+  margin-left: 3vw;
+}
+#container #products .productsArea h2 {
+  text-align: center;
+  font-size: 1.6rem;
+}
+#container #products .productsArea p {
+  text-align: center;
+  font-size: 1.5rem;
+}
+#container #menu {
+  width: 100%;
+  height: 130vh;
+  background-image: url(images/menubg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  font-size: 1.5rem;
+}
+#container #menu .titleMenu {
+  color: white;
+  font-family: "Raleway", sans-serif;
+  position: absolute;
+  margin-top: 10vh;
+  margin-left: 43vw;
+}
+#container #menu .titleMenu .imageMenu {
+  width: 15vw;
+}
+#container #menu .titleMenu h2 {
+  position: absolute;
+  margin-top: 5vh;
+  margin-left: 4.2vw;
+  font-size: 2rem;
+}
+#container #menu .menuArea {
+  position: absolute;
+  background-color: transparent;
+  width: 60vw;
+  height: 75vh;
+  margin-top: 40vh;
+  margin-left: 20vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  -moz-column-gap: 2vw;
+       column-gap: 2vw;
+}
+#container #menu .menuArea .menuPage {
+  background-color: transparent;
+  border-style: double;
+  border-color: #3f3f3f;
+}
+#container #menu .menuArea .menuPage h2 {
+  color: #fc5d23;
+  text-decoration: underline;
+  margin-left: 2vw;
+}
+#container #menu .menuArea .menuPage h3 {
+  text-transform: uppercase;
+  color: white;
+  margin-left: 2vw;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+#container #menu .menuArea .menuPage .itenDescrition {
+  color: gray;
+  font-size: 0.8rem;
+  margin-left: 2vw;
+  margin-top: -8px;
+}
+#container #menu .menuArea .menuPage .itenPrice {
+  position: absolute;
+  color: white;
+  margin-left: 25vw;
+  margin-top: -7vh;
+  font-weight: bold;
+}
+#container #about {
+  width: 100%;
+  height: 100vh;
+  background-image: url(images/aboutbg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100vw;
+}
+#container #about h2 {
+  position: absolute;
+  margin-top: 20vh;
+  margin-left: 20vw;
+  color: #f7551b;
+  font-size: 3rem;
+  font-family: "Raleway", sans-serif;
+}
+#container #about p {
+  position: absolute;
+  color: #3f3f3f;
+  margin-top: 40vh;
+  margin-left: 20vw;
+  font-size: 1.5rem;
+}
+#container #about img {
+  margin-top: 80vh;
+  margin-left: 20vw;
+}
+#container #gallery {
+  width: 100%;
+  height: 70vh;
+  background-image: url(images/gallerybg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100vw;
+}
+#container #gallery h2 {
+  position: absolute;
+  color: #f7551b;
+  margin-top: -15vh;
+  margin-left: 27vw;
+  font-size: 3rem;
+}
+#container #gallery .menuGallery {
+  position: absolute;
+  width: 15vw;
+  height: 40vh;
+  background-color: transparent;
+  border-style: double;
+  border-color: #3f3f3f;
+  margin-left: 25vw;
+  font-size: 1.3rem;
+}
+#container #gallery .menuGallery ul {
+  text-align: center;
+  list-style: none;
+}
+#container #gallery .menuGallery ul li {
+  margin-top: 1vh;
+  font-style: italic;
+  margin-left: -3vw;
+}
+#container #gallery .menuGallery ul li:hover {
+  color: #f7551b;
+}
+#container #gallery .galleryArea {
+  width: 45vw;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-left: 45vw;
+  margin-top: 30vh;
+}
+#container #gallery .galleryArea img {
+  width: 15vw;
+  height: 22vh;
+}
+#container #journal {
+  width: 100%;
+  height: 145vh;
+  background-image: url(images/journalbg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100vw;
+  font-size: 1.2rem;
+}
+#container #journal .journalBotton {
+  position: absolute;
+  color: #f8885f;
+  border-color: #f8885f;
+  border-style: solid;
+  width: 8vw;
+  text-align: center;
+  margin-top: 135vh;
+  margin-left: 43vw;
+}
+#container #journal h2 {
+  position: absolute;
+  color: #f8885f;
+  margin-top: 20vh;
+  margin-left: 20vw;
+  font-size: 3rem;
+}
+#container #journal .gridJournal {
+  position: absolute;
+  width: 45vw;
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-left: 17vw;
+  margin-top: 35vh;
+}
+#container #journal .gridJournal div {
+  width: 20vw;
+  height: 30vh;
+  background-color: white;
+}
+#container #journal .gridJournal div .textPostTitle {
+  font-size: 1.25rem;
+  margin-top: 9vh;
+  margin-left: 2.5vh;
+}
+#container #journal .gridJournal div .title2 {
+  position: absolute;
+  width: 10vw;
+  margin-left: 2vw;
+  margin-top: 5vh;
+  font-size: 0.94rem;
+  text-align: center;
+}
+#container #journal .gridJournal div .textPost {
+  background-color: transparent;
+  position: absolute;
+  margin-top: 1vh;
+}
+#container #journal .gridJournal div .whiteBackground {
+  position: absolute;
+  background-color: #ffffff9a;
+}
+#container #journal .gridJournal div .whiteBackground .title1 {
+  position: absolute;
+  width: 10vw;
+  margin-left: 9vw;
+  margin-top: 20vh;
+  font-size: 0.94rem;
+  text-align: center;
+}
+#container #journal .gridJournal div .whiteBackground .blogPostTitle {
+  position: absolute;
+  margin-top: 25vh;
+  margin-left: 4.3vw;
+  font-size: 1.25rem;
+}
+#container #journal .gridJournal div p {
+  background-color: #f7551b;
+}
+#container #journal .gridJournal div img {
+  width: 100%;
+  height: 100%;
+}
+#container #reservations {
+  background-image: url(images/reservationbg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100vw;
+  width: 100%;
+  height: 120vh;
+  font-size: 1.4rem;
+}
+#container #reservations .phoneContact {
+  position: absolute;
+  font-weight: bold;
+  margin-top: 65vh;
+  margin-left: 15vw;
+  border: 8px double;
+  width: 20vw;
+}
+#container #reservations .phoneContact p {
+  margin-left: 5vw;
+  font-size: 1.2rem;
+}
+#container #reservations .phoneContact img {
+  position: absolute;
+  width: 3vw;
+  margin-top: 4vh;
+  margin-left: 1vw;
+}
+#container #reservations h2 {
+  position: absolute;
+  color: #f7551b;
+  font-size: 3rem;
+  margin-left: 16vw;
+  margin-top: 17vh;
+}
+#container #reservations #reservationForm {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 50vw;
+  height: 75vh;
+  margin-top: 30vh;
+  margin-left: 40vw;
+  border: 8px double;
+}
+#container #reservations #reservationForm img {
+  position: absolute;
+  width: 11vw;
+  margin-top: 61.5vh;
+  margin-left: 5vw;
+}
+#container #reservations #reservationForm #makeReservation {
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: white;
+  grid-column: 1/3;
+}
+#container #reservations #reservationForm #mensageOfClient {
+  grid-column: 1/3;
+}
+#container #reservations .reservationText {
+  position: absolute;
+  margin-top: 35vh;
+  margin-left: 16vw;
+}
+#container #contact {
+  width: 100%;
+  height: 130vh;
+  background-image: url(images/contactbg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100vw;
+}
+#container #contact h2 {
+  position: absolute;
+  color: #f7551b;
+  font-size: 3rem;
+  margin-left: 20vw;
+  margin-top: 15vh;
+}
+#container #contact .map {
+  position: absolute;
+  width: 25vw;
+  height: 52vh;
+  margin-top: 70vh;
+  margin-left: 13vw;
+}
+#container #contact .contacts {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 13vw;
+  margin-top: 30vh;
+  margin-left: 20vw;
+  font-size: 1.3rem;
+}
+#container #contact .contacts img {
+  width: 2vw;
+  margin-top: 2vh;
+  margin-left: -3vw;
+}
+#container #contact .redes {
+  position: absolute;
+  margin-top: 60vh;
+  margin-left: 20vw;
+}
+#container #contact .redes img {
+  width: 2vw;
+  margin-left: 1vw;
+}
+#container #contact #contactForm {
+  position: absolute;
+  display: grid;
+  width: 40vw;
+  height: 90vh;
+  margin-top: 30vh;
+  margin-left: 40vw;
+  border: 8px double;
+}
+#container #contact #contactForm #sendMessage {
+  text-align: center;
+  text-transform: uppercase;
+  background-color: white;
+  font-weight: bold;
+}
+#container #contact #contactForm img {
+  position: absolute;
+  width: 15vw;
+  margin-top: 72vh;
+  margin-left: 5vw;
+}
+#container footer {
+  width: 100%;
+  height: 55vh;
+  background-image: url(images/footerbg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100vw;
+}
+#container footer img {
+  width: 2vw;
+  margin-left: 1vw;
+}
+#container footer h4 {
+  position: absolute;
+  color: white;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+#container footer .latestJournal {
+  color: #f8885f;
+  position: absolute;
+  margin-left: 60vw;
+  width: 25vw;
+  margin-top: 25vh;
+}
+#container footer .latestJournal p {
+  margin-top: 10vh;
+  font-size: 1.3rem;
+}
+#container footer .openHours {
+  color: white;
+  position: absolute;
+  margin-top: 5vh;
+  margin-left: 60vw;
+}
+#container footer .openHours p {
+  margin-top: 10vh;
+  font-size: 1.25rem;
+}
+#container footer .socialMedias {
+  position: absolute;
+  margin-top: 43vh;
+  margin-left: 3vw;
+}
+#container footer .socialMedias h4 {
+  position: absolute;
+  margin-top: -8vh;
+  margin-left: 1vw;
+}
+#container footer .customMenu {
+  position: absolute;
+  margin-left: 40vw;
+  margin-top: 12vh;
+  font-size: 1.3rem;
+  width: 10vw;
+}
+#container footer .customMenu h4 {
+  color: white;
+}
+#container footer .customMenu ul {
+  text-decoration: none;
+  margin-top: 8vh;
+}
+#container footer .customMenu ul li {
+  list-style: none;
+}
+#container footer .customMenu ul li a {
+  color: #f7551b;
+  text-decoration: none;
+}
+#container footer .latestTweets {
+  position: absolute;
+  font-size: 1.5rem;
+  margin-left: 5vw;
+  margin-top: 4vh;
+  width: 25vw;
+}
+#container footer .latestTweets p {
+  position: absolute;
+  margin-top: 8vh;
+  color: #fc5d23;
+}/*# sourceMappingURL=style.css.map */
