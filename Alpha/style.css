@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Text:ital@1&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::-moz-selection {
+  color: #fcd284;
+}
+
+*::selection {
+  color: #fcd284;
+}
+
+header {
+  width: 100%;
+  height: 105vh;
+}
+header .fixaMenu {
+  height: 9vh;
+  background-color: white;
+}
+header .fixaMenu .logoSection {
+  position: relative;
+  top: 2.5vh;
+  left: 2vw;
+  width: 3vw;
+}
+header .fixaMenu .logoSection img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+header .fixaMenu .menuSection {
+  background-color: white;
+  position: absolute;
+  margin-left: 45vw;
+  margin-top: -2.3vh;
+}
+header .fixaMenu .menuSection .menu ul {
+  display: flex;
+}
+header .fixaMenu .menuSection .menu ul li {
+  margin-left: 5vw;
+  list-style: none;
+}
+header .fixaMenu .menuSection .menu ul li a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.4rem;
+  font-family: "Josefin Sans", sans-serif;
+}
+header .fixaMenu .menuSection .menu ul li a:hover {
+  color: #fcd284;
+}
+header .imgArea {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  margin-top: 5vh;
+}
+header .imgArea .textArea {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+header .imgArea .textArea .alpha {
+  font-size: 5rem;
+}
+
+main .helloAlpha {
+  height: 105vh;
+}
+main .helloTitle {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  margin-top: 12vh;
+}
+main .helloTitle p {
+  color: red;
+}
+main .helloTitle h1 {
+  font-size: 7rem;
+  font-weight: lighter;
+  margin-top: 1.5vh;
+}
+main .helloTitle div {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: black;
+  color: white;
+  height: 4vh;
+  width: 30vw;
+}
+main .helloTitle div h2 {
+  margin-top: 0.2vh;
+}
+main .helloTitle div hr {
+  color: black;
+  border: solid black;
+}
+main .helloText {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50vw;
+  margin-top: 6vh;
+  font-family: "Crimson Text", sans-serif;
+  font-size: 1.4rem;
+}/*# sourceMappingURL=style.css.map */
