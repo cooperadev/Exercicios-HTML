@@ -82,23 +82,24 @@ header .imgArea .textArea .alpha {
 }
 
 main .helloAlpha {
-  height: 105vh;
+  height: 60vh;
 }
-main .helloTitle {
+main .helloAlpha .helloTitle {
   text-align: center;
   text-transform: uppercase;
   font-family: "Josefin Sans", sans-serif;
   margin-top: 12vh;
+  width: 30vw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
-main .helloTitle p {
-  color: red;
-}
-main .helloTitle h1 {
+main .helloAlpha .helloTitle h1 {
   font-size: 7rem;
   font-weight: lighter;
   margin-top: 1.5vh;
 }
-main .helloTitle div {
+main .helloAlpha .helloTitle div {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -108,14 +109,15 @@ main .helloTitle div {
   height: 4vh;
   width: 30vw;
 }
-main .helloTitle div h2 {
+main .helloAlpha .helloTitle div h2 {
   margin-top: 0.2vh;
 }
-main .helloTitle div hr {
+main .helloAlpha .helloTitle div hr {
   color: black;
   border: solid black;
 }
-main .helloText {
+main .helloAlpha .helloText {
+  color: gray;
   text-align: center;
   display: block;
   margin-left: auto;
@@ -124,4 +126,131 @@ main .helloText {
   margin-top: 6vh;
   font-family: "Crimson Text", sans-serif;
   font-size: 1.4rem;
+  font-weight: bold;
+}
+main .helloAlpha .tresPontos {
+  color: black;
+  font-weight: bold;
+  font-size: 3rem;
+  margin-top: 10vh;
+  position: absolute;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+main #work {
+  height: 110vh;
+}
+main #work .workTitle {
+  position: absolute;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin-top: 2vh;
+}
+main #work .workTitle h2 {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+}
+main #work .workTitle hr {
+  border: 2px solid black;
+  background-color: black;
+  width: 5vw;
+  margin-top: 1vh;
+  position: absolute;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+main #work .workTitle p {
+  color: gray;
+  margin-top: 3vh;
+}
+main #work nav {
+  position: absolute;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  margin-top: 12vh;
+}
+main #work nav .workMenu {
+  display: flex;
+}
+main #work nav .workMenu li {
+  list-style: none;
+  margin-left: 1.5vw;
+}
+main #work nav .workMenu li a {
+  text-transform: uppercase;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: black;
+}
+main #work nav .workMenu li a:hover {
+  color: #fcd284;
+}
+main #work .workGrid {
+  position: absolute;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  margin-top: 50vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+  text-align: center;
+}
+main #work .workGrid .img1 {
+  background-image: url(images/image2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+main #work .workGrid .img2 {
+  background-image: url(images/image3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+main #work .workGrid .img3 {
+  background-color: black;
+}
+main #work .workGrid .img3 hr {
+  border: solid #fcd284;
+}
+main #work .workGrid .img4 {
+  background-image: url(images/image5.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+main #work .workGrid .img5 {
+  background-image: url(images/image6.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+main #work .workGrid .img6 {
+  background-image: url(images/image7.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+main #work .workGrid div {
+  height: 30vh;
+  width: 20vw;
+}
+main #work .workGrid p {
+  text-transform: uppercase;
+  background-color: white;
+  margin-top: 30vh;
+}
+main #work .allWorks {
+  position: absolute;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  margin-top: 100vh;
+  border: 1px solid black;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: 20vw;
 }/*# sourceMappingURL=style.css.map */

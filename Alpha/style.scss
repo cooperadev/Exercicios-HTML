@@ -28,6 +28,12 @@
     margin-right: -50%;
     transform: translate(-50%, -50%)
 }
+@mixin centralizarBloco2 {
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
 
 @mixin cnetralizarVertical {
     display: table-cell;
@@ -95,43 +101,147 @@ header {
 
 main {
     .helloAlpha {
-        height: 105vh;
-    }
-    .helloTitle {
-        text-align: center;
-        text-transform: uppercase;
-        font-family: 'Josefin Sans', sans-serif;
-        margin-top: 12vh;
-        p {
-            color: red;
-        }
-        h1 {
-            font-size: 7rem;
-            font-weight:   lighter;
-            margin-top: 1.5vh;
-        }
-        div {
-            @include centralizarImagem();
+        height: 60vh;
+        .helloTitle {
             text-align: center;
-            background-color: black;
-            color: white;
-            height: 4vh;
+            text-transform: uppercase;
+            font-family: 'Josefin Sans', sans-serif;
+            margin-top: 12vh;
             width: 30vw;
+            @include centralizarImagem();
+            h1 {
+                font-size: 7rem;
+                font-weight:   lighter;
+                margin-top: 1.5vh;
+            }
+            div {
+                @include centralizarImagem();
+                text-align: center;
+                background-color: black;
+                color: white;
+                height: 4vh;
+                width: 30vw;
+                h2 {
+                    margin-top: 0.2vh;
+                }
+                hr {
+                    color: black;
+                    border: solid black;
+                }
+            }
+        }
+        .helloText {
+            color: gray;
+            text-align: center;
+            @include centralizarImagem();
+            width: 50vw;
+            margin-top: 6vh;
+            font-family: 'Crimson Text', sans-serif;
+            font-size: 1.4rem;
+            font-weight: bold;
+        }
+        .tresPontos {
+            color: black;
+            font-weight: bold;
+            font-size: 3rem;
+            margin-top: 10vh;
+            @include centralizarBloco2();
+        }
+    }
+    #work {
+        height: 110vh;
+        .workTitle {
+            @include centralizarBloco2();
+            text-align: center;
+            margin-top: 2vh;
             h2 {
-                margin-top: 0.2vh;
+                text-transform: uppercase;
+                font-size: 1.8rem;
             }
             hr {
-                color: black;
-                border: solid black;
+                border: 2px solid black;
+                background-color: black;
+                width: 5vw;
+                margin-top: 1vh;
+                @include centralizarBloco2()
+            }
+            p {
+                color: gray;
+                margin-top: 3vh;
             }
         }
-    }
-    .helloText {
-        text-align: center;
-        @include centralizarImagem();
-        width: 50vw;
-        margin-top: 6vh;
-        font-family: 'Crimson Text', sans-serif;
-        font-size: 1.4rem;
+        nav {
+            @include centralizarBloco2();
+            margin-top: 12vh;
+            .workMenu {
+                display: flex;
+                li {
+                    list-style: none;
+                    margin-left: 1.5vw;
+                    a {
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        text-decoration: none;
+                        font-size: 1.4rem;
+                        color: black;
+                        &:hover {
+                            color: #fcd284;
+                        }
+                    }
+                }
+            }
+        }
+        .workGrid {
+            @include centralizarBloco2();
+            margin-top: 50vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 50px;
+            text-align: center;
+            .img1{
+                background-image: url(images/image2.jpg);
+                @include backgroudConfig();
+            }
+            .img2{
+                background-image: url(images/image3.jpg);
+                @include backgroudConfig();
+            }
+            .img3{
+                background-color: black;
+                hr {
+                   border: solid #fcd284;
+                }
+            }
+            .img4{
+                background-image: url(images/image5.jpg);
+                @include backgroudConfig();
+            }
+            .img5{
+                background-image: url(images/image6.jpg);
+                @include backgroudConfig();
+            }
+            .img6{
+                background-image: url(images/image7.jpg);
+                @include backgroudConfig();
+            }
+            div {
+                height: 30vh;
+                width: 20vw;
+            }
+            p {
+               text-transform: uppercase;
+               background-color: white;
+               margin-top: 30vh;
+            }
+        }  
+        .allWorks {
+            @include centralizarBloco2();
+            margin-top: 100vh;
+            border: 1px solid black;
+            text-align: center;
+            font-weight: bold;
+            text-transform: uppercase;
+            width: 20vw;
+        }     
     }
 }
