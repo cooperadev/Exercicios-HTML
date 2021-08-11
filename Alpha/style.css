@@ -51,7 +51,7 @@ header .fixaMenu .menuSection .menu ul li a {
   color: black;
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 1.4rem;
+  font-size: 1.4em;
   font-family: "Josefin Sans", sans-serif;
 }
 header .fixaMenu .menuSection .menu ul li a:hover {
@@ -78,7 +78,7 @@ header .imgArea .textArea {
   font-weight: bold;
 }
 header .imgArea .textArea .alpha {
-  font-size: 5rem;
+  font-size: 5em;
 }
 
 main .helloAlpha {
@@ -95,7 +95,7 @@ main .helloAlpha .helloTitle {
   margin-right: auto;
 }
 main .helloAlpha .helloTitle h1 {
-  font-size: 7rem;
+  font-size: 7em;
   font-weight: lighter;
   margin-top: 1.5vh;
 }
@@ -125,13 +125,13 @@ main .helloAlpha .helloText {
   width: 50vw;
   margin-top: 6vh;
   font-family: "Crimson Text", sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.4em;
   font-weight: bold;
 }
 main .helloAlpha .tresPontos {
   color: black;
   font-weight: bold;
-  font-size: 3rem;
+  font-size: 3em;
   margin-top: 10vh;
   position: absolute;
   left: 50%;
@@ -151,7 +151,7 @@ main #work .workTitle {
 }
 main #work .workTitle h2 {
   text-transform: uppercase;
-  font-size: 1.8rem;
+  font-size: 1.8em;
 }
 main #work .workTitle hr {
   border: 2px solid black;
@@ -185,7 +185,7 @@ main #work nav .workMenu li a {
   text-transform: uppercase;
   font-weight: bold;
   text-decoration: none;
-  font-size: 1.4rem;
+  font-size: 1.4em;
   color: black;
 }
 main #work nav .workMenu li a:hover {
@@ -253,4 +253,26 @@ main #work .allWorks {
   font-weight: bold;
   text-transform: uppercase;
   width: 20vw;
+}
+main .services {
+  height: 100vh;
+}
+main .services .ourServices {
+  background-image: url(images/image8.jpg);
+  width: 40vw;
+  height: 70vh;
+  margin-left: 3vw;
+}
+main .services .ourServices div {
+  position: absolute;
+  background-color: white;
+  text-align: center;
+  width: 10vw;
+  height: 10vh;
+  margin-left: 0%;
+  margin-top: 20vh;
+}
+main .services .ourServices div p {
+  text-transform: uppercase;
+  margin-top: 5vh;
 }/*# sourceMappingURL=style.css.map */

@@ -71,7 +71,7 @@ header {
                             color: black;
                             text-transform: uppercase;
                             font-weight: bold;
-                            font-size: 1.4rem;
+                            font-size: 1.4em;
                             font-family: 'Josefin Sans', sans-serif;
                             &:hover {
                                 color: #fcd284;
@@ -93,7 +93,7 @@ header {
             text-align: center;
             font-weight: bold;
             .alpha {
-                font-size: 5rem;
+                font-size: 5em;
             }
         }        
     }
@@ -110,7 +110,7 @@ main {
             width: 30vw;
             @include centralizarImagem();
             h1 {
-                font-size: 7rem;
+                font-size: 7em;
                 font-weight:   lighter;
                 margin-top: 1.5vh;
             }
@@ -137,13 +137,13 @@ main {
             width: 50vw;
             margin-top: 6vh;
             font-family: 'Crimson Text', sans-serif;
-            font-size: 1.4rem;
+            font-size: 1.4em;
             font-weight: bold;
         }
         .tresPontos {
             color: black;
             font-weight: bold;
-            font-size: 3rem;
+            font-size: 3em;
             margin-top: 10vh;
             @include centralizarBloco2();
         }
@@ -156,7 +156,7 @@ main {
             margin-top: 2vh;
             h2 {
                 text-transform: uppercase;
-                font-size: 1.8rem;
+                font-size: 1.8em;
             }
             hr {
                 border: 2px solid black;
@@ -182,7 +182,7 @@ main {
                         text-transform: uppercase;
                         font-weight: bold;
                         text-decoration: none;
-                        font-size: 1.4rem;
+                        font-size: 1.4em;
                         color: black;
                         &:hover {
                             color: #fcd284;
@@ -243,5 +243,27 @@ main {
             text-transform: uppercase;
             width: 20vw;
         }     
+    }
+    .services {
+        height: 100vh;
+        .ourServices {
+            background-image: url(images/image8.jpg);
+            width: 40vw;
+            height: 70vh;
+            margin-left: 3vw;
+            div {
+                position: absolute;
+                background-color: white;
+                text-align: center;
+                width: 10vw;
+                height: 10vh;
+                margin-left: 0%;
+                margin-top: 20vh;
+                p {
+                    text-transform: uppercase;
+                    margin-top: 5vh;
+                }
+            }
+        }
     }
 }
