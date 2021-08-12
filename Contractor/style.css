@@ -328,7 +328,7 @@ main #aboutUs .whatWeDo img {
 main #aboutUs .chooseUs {
   width: 22vw;
   height: 66vh;
-  margin-top: 3vh;
+  margin-top: 2vh;
   background-color: white;
   border-radius: 10% 10% 10% 10%;
 }
@@ -359,4 +359,32 @@ main #aboutUs .chooseUs p {
 }
 main #aboutUs .chooseUs hr {
   margin-top: 2vh;
+}
+main .purchase {
+  background: repeating-linear-gradient(-45deg, #000, #000 10px, #464646 10px, #464646 20px);
+  width: 100vw;
+  height: 25vh;
+}
+main .purchase .blackBackground {
+  background-color: #000;
+  width: 100vw;
+  height: 25vh;
+  opacity: 0.9;
+}
+main .purchase .blackBackground .contractor {
+  margin-left: 5vw;
+  margin-top: 10vh;
+}
+main .purchase .blackBackground .contractor h3 {
+  color: white;
+}
+main .purchase .blackBackground .contractor p {
+  color: #bdbdbd;
+  margin-top: 2vh;
+}
+main .purchase .blackBackground .purchase {
+  color: red;
+}
+main #projects {
+  height: 100vw;
 }/*# sourceMappingURL=style.css.map */
