@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans+Bold:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  position: relative;
+  background-image: url(assets/hero.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+}
+header .blackOpacity {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  opacity: 0.7;
+}
+header nav {
+  position: absolute;
+  width: 100vw;
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+header nav img {
+  display: flex;
+  align-items: center;
+  margin-left: 6vw;
+}
+header nav ul {
+  display: flex;
+  width: 45vw;
+  text-align: center;
+  margin-left: 15%;
+}
+header nav ul li {
+  list-style: none;
+  margin-left: 2.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header nav ul li a {
+  color: #818189;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+header nav ul li a:hover {
+  color: white;
+}
+header nav .iconsMenu {
+  position: relative;
+  display: flex;
+  margin-left: 1%;
+}
+header nav .iconsMenu div {
+  display: flex;
+  align-items: center;
+  margin-left: -4.5vw;
+  width: 11vw;
+}
+header nav .iconsMenu div img {
+  width: 1.3vw;
+}
+header nav .iconsMenu div p {
+  text-transform: uppercase;
+  color: #818189;
+  margin-left: 0.5vw;
+}
+header .inspire {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+header .inspire h1 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 10rem;
+  font-family: "Montserrat";
+  letter-spacing: 1.5vw;
+}
+header .inspire p {
+  color: gray;
+  font-size: 1.7rem;
+  font-family: "Open Sans";
+  text-transform: uppercase;
+  margin-top: 5vh;
+}
+header .inspire a {
+  text-decoration: none;
+  color: black;
+}
+header .inspire a .botao {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  font-weight: bold;
+  font-family: "Open Sans";
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 5vh;
+  height: 4vh;
+  width: 20vw;
+}/*# sourceMappingURL=style.css.map */

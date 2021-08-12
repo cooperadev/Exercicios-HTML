@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Bold:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+@mixin centralizar1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin centralizar2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin centralizar3 {
+    display: flex;
+    align-items: center;
+}
+
+@mixin centralizar4 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: relative;
+    background-image: url(assets/hero.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+
+    .blackOpacity {
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        background-color: #000;
+        opacity: 0.7;
+    }
+
+    nav {
+        position: absolute;
+        width: 100vw;
+        display: flex;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+
+        img {
+            display: flex;
+            align-items: center;
+            margin-left: 6vw;
+        }
+
+        ul {
+            display: flex;
+            width: 45vw;
+            text-align: center;
+            margin-left: 15%;
+
+            li {
+                list-style: none;
+                margin-left: 2.5vw;
+                @include centralizar2();
+
+                a {
+                    color: #818189;
+                    text-transform: uppercase;
+                    text-decoration: none;
+
+                    &:hover {
+                        color: white;
+                    }
+                }
+            }
+        }
+
+        .iconsMenu {
+            position: relative;
+            display: flex;
+            margin-left: 1%;
+
+            div {
+                @include centralizar3();
+                margin-left: -4.5vw;
+                width: 11vw;
+
+                img {
+                    width: 1.3vw;
+                }
+
+                p {
+                    text-transform: uppercase;
+                    color: #818189;
+                    margin-left: 0.5vw;
+                }
+            }
+        }
+    }
+
+    .inspire {
+        @include centralizar1();
+        text-align: center;
+
+        h1 {
+            color: white;
+            text-transform: uppercase;
+            font-size: 10rem;
+            font-family: 'Montserrat';
+            letter-spacing: 1.5vw;
+        }
+
+        p {
+            color: gray;
+            font-size: 1.7rem;
+            font-family: 'Open Sans';
+            text-transform: uppercase;
+            margin-top: 5vh;
+        }
+        a {            
+            text-decoration: none;
+            color: black;   
+            .botao {
+                @include centralizar4();
+                background-color: white;
+                font-weight: bold;
+                font-family: 'Open Sans';
+                font-size: 1rem;
+                text-transform: uppercase;
+                text-align: center;
+                margin-top: 5vh;
+                height: 4vh;
+                width: 20vw;
+            }
+        }
+    }
+}
