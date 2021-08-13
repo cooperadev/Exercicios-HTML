@@ -272,20 +272,157 @@ main #workProcess .freeQuote {
   text-align: center;
 }
 main #promo {
-  height: 100vw;
+  position: relative;
+}
+main #promo .cima {
+  height: 60vh;
   background-color: whitesmoke;
 }
 main #promo .cima .grid {
   display: grid;
-  position: relative;
+  position: absolute;
   grid-template-columns: 1fr;
   gap: 10px;
+  height: 60vh;
+  background-color: white;
 }
 main #promo .cima .grid .iten {
-  background-color: red;
-  margin-left: 2vw;
+  background-color: white;
+}
+main #promo .cima .grid .iten:hover {
+  transition-duration: 0.5s;
+  border-left: 4px solid #000;
+  background-color: whitesmoke;
 }
 main #promo .cima .grid .iten h3 {
+  letter-spacing: 0.5vw;
   font-family: "Open Sans";
   text-transform: uppercase;
+  margin-left: 4vw;
+  margin-top: 1vh;
+}
+main #promo .cima .grid .iten p {
+  font-family: "Montserrat";
+  margin-top: 2.5vh;
+  font-size: 1.1rem;
+  margin-left: 4vw;
+}
+main #promo .cima .areaPromo {
+  position: absolute;
+  width: 65vw;
+  height: 60vh;
+  background-color: whitesmoke;
+  margin-left: 27.4vw;
+}
+main #promo .cima .areaPromo .textPromo {
+  width: 25vw;
+  margin-top: 15vh;
+  margin-left: 5vw;
+}
+main #promo .cima .areaPromo .textPromo h3 {
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  font-size: 1.3rem;
+}
+main #promo .cima .areaPromo .textPromo p {
+  margin-top: 2vh;
+}
+main #promo .cima .areaPromo img {
+  position: absolute;
+  width: 30vw;
+  margin-left: 30vw;
+  margin-top: -35vh;
+}
+main #promo .baixo {
+  position: relative;
+  height: 40vh;
+  background-image: url(assets/progress_bg.jpg);
+  background-position: center;
+  background-size: cover;
+}
+main #promo .baixo .grid {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  margin-left: -5vw;
+}
+main #promo .baixo .grid div {
+  margin-left: 10vw;
+  text-align: center;
+}
+main #promo .baixo .grid div p {
+  text-transform: uppercase;
+  color: white;
+  font-family: "Opera Sans Bold";
+  margin-top: 0.5vh;
+}
+main #peopleSay {
+  height: 100vh;
+  position: relative;
+  background-color: whitesmoke;
+}
+main #peopleSay .sayTitle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin-top: -35vh;
+  text-transform: uppercase;
+}
+main #peopleSay .sayTitle h3 {
+  font-family: "Open Sans";
+}
+main #peopleSay .sayTitle p {
+  margin-top: 1vh;
+  color: #818189;
+}
+main #peopleSay .grid {
+  display: flex;
+  position: absolute;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+main #peopleSay .grid .iten {
+  position: relative;
+  background-color: white;
+  width: 25vw;
+  height: 60vh;
+  margin-left: 2vw;
+}
+main #peopleSay .grid .iten hr {
+  margin-top: 2vh;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20vw;
+}
+main #peopleSay .grid .iten img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  width: 7vw;
+  margin-top: 3vh;
+}
+main #peopleSay .grid .iten p {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 20vw;
+  color: #818189;
+  margin-top: 2vh;
+  font-family: "Montserrat";
+}
+main #peopleSay .grid .iten .upper {
+  text-transform: uppercase;
+  color: #000;
 }/*# sourceMappingURL=style.css.map */
