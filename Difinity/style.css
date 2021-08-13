@@ -5,6 +5,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 header {
@@ -82,6 +87,7 @@ header .inspire {
   margin-right: -50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  margin-top: 7vh;
 }
 header .inspire h1 {
   color: white;
@@ -102,6 +108,7 @@ header .inspire a {
   color: black;
 }
 header .inspire a .botao {
+  display: block;
   margin-left: auto;
   margin-right: auto;
   background-color: white;
@@ -113,4 +120,172 @@ header .inspire a .botao {
   margin-top: 5vh;
   height: 4vh;
   width: 20vw;
+}
+
+main #whatWeDo {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: whitesmoke;
+}
+main #whatWeDo .whatTitle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin-top: -35vh;
+  text-transform: uppercase;
+}
+main #whatWeDo .whatTitle h3 {
+  font-family: "Open Sans";
+}
+main #whatWeDo .whatTitle p {
+  margin-top: 1vh;
+  color: #818189;
+}
+main #whatWeDo .grid {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 10vh;
+}
+main #whatWeDo .grid .iten {
+  width: 35vw;
+  height: 30vh;
+  background-color: white;
+  box-shadow: 5px 5px 10px gray;
+  display: flex;
+}
+main #whatWeDo .grid .iten:hover {
+  transform: scale(1.1);
+  transition-duration: 1s;
+}
+main #whatWeDo .grid .iten img {
+  width: 14vw;
+  height: 30vh;
+}
+main #whatWeDo .grid .iten div {
+  text-transform: uppercase;
+}
+main #whatWeDo .grid .iten div h3 {
+  margin-top: 3vh;
+  margin-left: 2vw;
+  font-family: "Montserrat";
+}
+main #whatWeDo .grid .iten div p {
+  font-family: "Open Sans";
+  color: #818189;
+  margin-left: 2vw;
+  margin-top: 1.5vh;
+  font-size: 0.8rem;
+}
+main #whatWeDo .grid .iten div a {
+  position: absolute;
+  font-family: "Open Sans";
+  color: #818189;
+  font-weight: bolder;
+  text-decoration: none;
+  margin-top: 9vh;
+  margin-left: 7vw;
+}
+main #workProcess {
+  position: relative;
+  height: 100vh;
+}
+main #workProcess .workTitle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin-top: -35vh;
+  text-transform: uppercase;
+}
+main #workProcess .workTitle h3 {
+  font-family: "Open Sans";
+}
+main #workProcess .workTitle p {
+  margin-top: 1vh;
+  color: #818189;
+}
+main #workProcess .grid {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  margin-top: 1vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 100px;
+}
+main #workProcess .grid .iten {
+  position: relative;
+  height: 45vh;
+  margin-left: 5vh;
+}
+main #workProcess .grid .iten .numero {
+  font-size: 12rem;
+  color: #b4b4b4;
+  position: absolute;
+  margin-top: 2vh;
+}
+main #workProcess .grid .iten h3 {
+  position: absolute;
+  font-size: 1.7rem;
+  margin-top: 14.5vh;
+  margin-left: 9vw;
+  text-transform: uppercase;
+  font-family: "Open Sans";
+}
+main #workProcess .grid .iten .text {
+  text-align: center;
+  font-family: "Open Sans";
+  color: black;
+  margin-top: 32vh;
+  margin-left: 1vw;
+}
+main #workProcess .freeQuote {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background-color: #000;
+  color: white;
+  width: 15vw;
+  height: 5vh;
+  margin-top: 40vh;
+  text-transform: uppercase;
+  text-align: center;
+}
+main #promo {
+  height: 100vw;
+  background-color: whitesmoke;
+}
+main #promo .cima .grid {
+  display: grid;
+  position: relative;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+main #promo .cima .grid .iten {
+  background-color: red;
+  margin-left: 2vw;
+}
+main #promo .cima .grid .iten h3 {
+  font-family: "Open Sans";
+  text-transform: uppercase;
 }/*# sourceMappingURL=style.css.map */

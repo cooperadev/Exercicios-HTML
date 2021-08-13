@@ -22,14 +22,42 @@
 }
 
 @mixin centralizar4 {
+    display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+@mixin centralizar5 {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin titleConfig {
+    @include centralizar1();
+    text-align: center;
+    margin-top: -35vh;
+    text-transform: uppercase;
+
+    h3 {
+        font-family: 'Open Sans';
+    }
+
+    p {
+        margin-top: 1vh;
+        color: #818189;
+
+    }
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
 }
 
 header {
@@ -111,6 +139,7 @@ header {
     .inspire {
         @include centralizar1();
         text-align: center;
+        margin-top: 7vh;
 
         h1 {
             color: white;
@@ -127,9 +156,11 @@ header {
             text-transform: uppercase;
             margin-top: 5vh;
         }
-        a {            
+
+        a {
             text-decoration: none;
-            color: black;   
+            color: black;
+
             .botao {
                 @include centralizar4();
                 background-color: white;
@@ -141,6 +172,157 @@ header {
                 margin-top: 5vh;
                 height: 4vh;
                 width: 20vw;
+            }
+        }
+    }
+}
+
+main {
+    #whatWeDo {
+        position: relative;
+        height: 100vh;
+        width: 100vw;
+        background-color: whitesmoke;
+
+        .whatTitle {
+            @include titleConfig();
+        }
+
+        .grid {
+            @include centralizar1();
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 10vh;
+
+            .iten {
+                width: 35vw;
+                height: 30vh;
+                background-color: white;
+                box-shadow: 5px 5px 10px gray;
+                display: flex;
+
+                &:hover {
+                    transform: scale(1.1);
+                    transition-duration: 1s;
+                }
+
+                img {
+                    width: 14vw;
+                    height: 30vh;
+                }
+
+                div {
+                    text-transform: uppercase;
+
+                    h3 {
+                        margin-top: 3vh;
+                        margin-left: 2vw;
+                        font-family: 'Montserrat';
+                    }
+
+                    p {
+                        font-family: 'Open Sans';
+                        color: #818189;
+                        margin-left: 2vw;
+                        margin-top: 1.5vh;
+                        font-size: 0.8rem;
+                    }
+
+                    a {
+                        position: absolute;
+                        font-family: 'Open Sans';
+                        color: #818189;
+                        font-weight: bolder;
+                        text-decoration: none;
+                        margin-top: 9vh;
+                        margin-left: 7vw;
+                    }
+                }
+            }
+        }
+    }
+
+    #workProcess {
+        position: relative;
+        height: 100vh;
+
+        .workTitle {
+            @include titleConfig();
+        }
+
+        .grid {
+            @include centralizar1();
+            margin-top: 1vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 100px;
+
+            .iten {
+                position: relative;
+                height: 45vh;
+                margin-left: 5vh;
+
+                .numero {
+                    font-size: 12rem;
+                    color: #b4b4b4;
+                    position: absolute;
+                    margin-top: 2vh;
+                }
+
+                h3 {
+                    position: absolute;
+                    font-size: 1.7rem;
+                    margin-top: 14.5vh;
+                    margin-left: 9vw;
+                    text-transform: uppercase;
+                    font-family: 'Open Sans';
+                }
+
+                .text {
+                    text-align: center;
+                    font-family: 'Open Sans';
+                    color: black;
+                    margin-top: 32vh;
+                    margin-left: 1vw;
+                }
+            }
+        }
+
+        .freeQuote {
+            @include centralizar1();
+            @include centralizar2();
+            position: absolute;
+            background-color: #000;
+            color: white; 
+            width: 15vw;
+            height: 5vh;
+            margin-top: 40vh;
+            text-transform: uppercase;
+            text-align: center;
+        }
+    }
+
+    #promo {
+        height: 100vw;
+        background-color: whitesmoke;
+        .cima {
+            .grid {
+                display: grid;
+                position: relative;
+                grid-template-columns: 1fr;
+                gap: 10px;
+                .iten {
+                    background-color: red;
+                    margin-left: 2vw;
+                    h3{
+                        font-family: 'Open Sans';
+                        text-transform: uppercase;
+                    }
+                    p {
+    
+                    }
+                }
             }
         }
     }
