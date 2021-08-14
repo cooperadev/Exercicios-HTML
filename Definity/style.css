@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 62.5%;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -29,10 +30,9 @@ header .blackOpacity {
   opacity: 0.7;
 }
 header nav {
-  position: absolute;
+  position: relative;
   width: 100vw;
   display: flex;
-  font-family: "Montserrat", sans-serif;
   font-weight: bold;
 }
 header nav img {
@@ -41,10 +41,11 @@ header nav img {
   margin-left: 6vw;
 }
 header nav ul {
+  position: relative;
   display: flex;
   width: 45vw;
   text-align: center;
-  margin-left: 15%;
+  margin-left: 10vw;
 }
 header nav ul li {
   list-style: none;
@@ -54,9 +55,10 @@ header nav ul li {
   justify-content: center;
 }
 header nav ul li a {
-  color: #818189;
+  color: gray;
   text-transform: uppercase;
   text-decoration: none;
+  font-size: 1.6rem;
 }
 header nav ul li a:hover {
   color: white;
@@ -64,12 +66,12 @@ header nav ul li a:hover {
 header nav .iconsMenu {
   position: relative;
   display: flex;
-  margin-left: 1%;
 }
 header nav .iconsMenu div {
   display: flex;
   align-items: center;
-  margin-left: -4.5vw;
+  justify-content: center;
+  margin-left: -3vw;
   width: 11vw;
 }
 header nav .iconsMenu div img {
@@ -77,8 +79,9 @@ header nav .iconsMenu div img {
 }
 header nav .iconsMenu div p {
   text-transform: uppercase;
-  color: #818189;
+  color: gray;
   margin-left: 0.5vw;
+  font-size: 1.6rem;
 }
 header .inspire {
   position: absolute;
@@ -87,14 +90,13 @@ header .inspire {
   margin-right: -50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  margin-top: 7vh;
 }
 header .inspire h1 {
   color: white;
   text-transform: uppercase;
-  font-size: 10rem;
-  font-family: "Montserrat";
-  letter-spacing: 1.5vw;
+  font-size: 15rem;
+  font-family: "Open Sans";
+  letter-spacing: 1rem;
 }
 header .inspire p {
   color: gray;
@@ -108,42 +110,51 @@ header .inspire a {
   color: black;
 }
 header .inspire a .botao {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
   background-color: white;
   font-weight: bold;
-  font-family: "Open Sans";
-  font-size: 1rem;
+  font-size: 1.3rem;
   text-transform: uppercase;
   text-align: center;
-  margin-top: 5vh;
+  margin-top: 25vh;
   height: 4vh;
-  width: 20vw;
+  width: 10vw;
 }
 
 main #whatWeDo {
   position: relative;
   height: 100vh;
   width: 100vw;
-  background-color: #f8f8f8;
+  background-color: whitesmoke;
 }
 main #whatWeDo .whatTitle {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   position: absolute;
-  top: 50%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  margin-top: -35vh;
   text-transform: uppercase;
+  margin-top: 10vh;
 }
 main #whatWeDo .whatTitle h3 {
   font-family: "Open Sans";
+  font-size: 2.5rem;
+  letter-spacing: 0.5rem;
 }
 main #whatWeDo .whatTitle p {
   margin-top: 1vh;
-  color: #818189;
+  color: gray;
+  font-size: 1.6rem;
 }
 main #whatWeDo .grid {
   position: absolute;
@@ -154,7 +165,6 @@ main #whatWeDo .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
-  margin-top: 10vh;
 }
 main #whatWeDo .grid .iten {
   width: 35vw;
@@ -177,44 +187,50 @@ main #whatWeDo .grid .iten div {
 main #whatWeDo .grid .iten div h3 {
   margin-top: 3vh;
   margin-left: 2vw;
-  font-family: "Montserrat";
+  font-family: "Open Sans";
+  font-size: 2rem;
 }
 main #whatWeDo .grid .iten div p {
-  font-family: "Open Sans";
-  color: #818189;
+  color: gray;
   margin-left: 2vw;
   margin-top: 1.5vh;
-  font-size: 0.8rem;
+  font-size: 1.6rem;
+  width: 18vw;
 }
 main #whatWeDo .grid .iten div a {
   position: absolute;
-  font-family: "Open Sans";
-  color: #818189;
-  font-weight: bolder;
+  color: gray;
+  font-weight: bold;
   text-decoration: none;
-  margin-top: 9vh;
+  margin-top: 5vh;
   margin-left: 7vw;
+  font-size: 1.3rem;
 }
 main #workProcess {
   position: relative;
-  height: 100vh;
+  height: 80vh;
 }
 main #workProcess .workTitle {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   position: absolute;
-  top: 50%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  margin-top: -35vh;
   text-transform: uppercase;
+  margin-top: 10vh;
 }
 main #workProcess .workTitle h3 {
   font-family: "Open Sans";
+  font-size: 2.5rem;
+  letter-spacing: 0.5rem;
 }
 main #workProcess .workTitle p {
   margin-top: 1vh;
-  color: #818189;
+  color: gray;
+  font-size: 1.6rem;
 }
 main #workProcess .grid {
   position: absolute;
@@ -222,36 +238,42 @@ main #workProcess .grid {
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
-  margin-top: 1vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 100px;
+  gap: 2vw;
+  margin-top: -10vh;
 }
 main #workProcess .grid .iten {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
   height: 45vh;
-  margin-left: 5vh;
 }
 main #workProcess .grid .iten .numero {
-  font-size: 12rem;
+  font-size: 18rem;
   color: #b4b4b4;
   position: absolute;
   margin-top: 2vh;
 }
 main #workProcess .grid .iten h3 {
   position: absolute;
-  font-size: 1.7rem;
-  margin-top: 14.5vh;
-  margin-left: 9vw;
+  font-size: 3rem;
+  margin-left: 10vw;
   text-transform: uppercase;
   font-family: "Open Sans";
 }
 main #workProcess .grid .iten .text {
-  text-align: center;
-  font-family: "Open Sans";
+  z-index: 10;
+  font-size: 1.6rem;
   color: black;
-  margin-top: 32vh;
-  margin-left: 1vw;
+  margin-top: 30vh;
+  margin-left: 10vw;
+  width: 15vw;
+  font-weight: bold;
 }
 main #workProcess .freeQuote {
   position: absolute;
@@ -267,16 +289,18 @@ main #workProcess .freeQuote {
   color: white;
   width: 15vw;
   height: 5vh;
-  margin-top: 40vh;
+  margin-top: 25vh;
+  margin-left: 3vw;
   text-transform: uppercase;
   text-align: center;
+  font-size: 1.6rem;
 }
 main #promo {
   position: relative;
 }
 main #promo .cima {
   height: 60vh;
-  background-color: #f8f8f8;
+  background-color: whitesmoke;
 }
 main #promo .cima .grid {
   display: grid;
@@ -292,11 +316,12 @@ main #promo .cima .grid .iten {
 main #promo .cima .grid .iten:hover {
   transition-duration: 0.5s;
   border-left: 4px solid #000;
-  background-color: #f8f8f8;
+  background-color: whitesmoke;
 }
 main #promo .cima .grid .iten h3 {
   letter-spacing: 0.5vw;
   font-family: "Open Sans";
+  font-size: 1.7rem;
   text-transform: uppercase;
   margin-left: 4vw;
   margin-top: 1vh;
@@ -304,14 +329,14 @@ main #promo .cima .grid .iten h3 {
 main #promo .cima .grid .iten p {
   font-family: "Montserrat";
   margin-top: 2.5vh;
-  font-size: 1.1rem;
+  font-size: 1.6rem;
   margin-left: 4vw;
 }
 main #promo .cima .areaPromo {
   position: absolute;
   width: 65vw;
   height: 60vh;
-  background-color: #f8f8f8;
+  background-color: whitesmoke;
   margin-left: 27.4vw;
 }
 main #promo .cima .areaPromo .textPromo {
@@ -322,15 +347,16 @@ main #promo .cima .areaPromo .textPromo {
 main #promo .cima .areaPromo .textPromo h3 {
   text-transform: uppercase;
   font-family: "Montserrat";
-  font-size: 1.3rem;
+  font-size: 2.5rem;
 }
 main #promo .cima .areaPromo .textPromo p {
   margin-top: 2vh;
+  font-size: 1.6rem;
 }
 main #promo .cima .areaPromo img {
   position: absolute;
-  width: 30vw;
-  margin-left: 30vw;
+  width: 32vw;
+  margin-left: 32vw;
   margin-top: -35vh;
 }
 main #promo .baixo {
@@ -356,30 +382,35 @@ main #promo .baixo .grid div {
 main #promo .baixo .grid div p {
   text-transform: uppercase;
   color: white;
-  font-family: "Opera Sans Bold";
-  margin-top: 0.5vh;
+  font-size: 1.6rem;
+  margin-top: 1vh;
 }
 main #peopleSay {
   height: 120vh;
   position: relative;
-  background-color: #f8f8f8;
+  background-color: whitesmoke;
 }
 main #peopleSay .sayTitle {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   position: absolute;
-  top: 50%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  margin-top: -35vh;
   text-transform: uppercase;
+  margin-top: 10vh;
 }
 main #peopleSay .sayTitle h3 {
   font-family: "Open Sans";
+  font-size: 2.5rem;
+  letter-spacing: 0.5rem;
 }
 main #peopleSay .sayTitle p {
   margin-top: 1vh;
-  color: #818189;
+  color: gray;
+  font-size: 1.6rem;
 }
 main #peopleSay .grid {
   display: flex;
@@ -389,14 +420,18 @@ main #peopleSay .grid {
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
-  margin-top: 2vh;
 }
 main #peopleSay .grid .iten {
   position: relative;
-  background-color: #f8f8f8;
+  background-color: white;
   width: 25vw;
   height: 60vh;
-  margin-left: 2vw;
+  margin-left: 3vw;
+}
+main #peopleSay .grid .iten:hover {
+  transform: scale(1.1);
+  box-shadow: 5px 5px 20px gray;
+  transition-duration: 0.5s;
 }
 main #peopleSay .grid .iten hr {
   margin-top: 2vh;
@@ -422,6 +457,7 @@ main #peopleSay .grid .iten p {
   color: #818189;
   margin-top: 2vh;
   font-family: "Montserrat";
+  font-size: 1.6rem;
 }
 main #peopleSay .grid .iten .upper {
   text-transform: uppercase;
@@ -436,7 +472,7 @@ main #peopleSay .imageGrid {
   transform: translate(-50%, -50%);
   display: flex;
   justify-content: center;
-  background-color: #f8f8f8;
+  background-color: #fefefe;
   margin-top: 50vh;
   width: 100vw;
 }
@@ -448,21 +484,26 @@ main #projects {
   position: relative;
 }
 main #projects .projectsTitle {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   position: absolute;
-  top: 50%;
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  margin-top: -35vh;
   text-transform: uppercase;
+  margin-top: 10vh;
 }
 main #projects .projectsTitle h3 {
   font-family: "Open Sans";
+  font-size: 2.5rem;
+  letter-spacing: 0.5rem;
 }
 main #projects .projectsTitle p {
   margin-top: 1vh;
-  color: #818189;
+  color: gray;
+  font-size: 1.6rem;
 }
 main #projects nav {
   position: absolute;
@@ -471,7 +512,7 @@ main #projects nav {
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
-  margin-top: -20vh;
+  margin-top: -25vh;
 }
 main #projects nav ul {
   display: flex;
@@ -495,6 +536,7 @@ main #projects nav ul li a {
   text-transform: uppercase;
   font-family: "Opera Sans";
   font-weight: bold;
+  font-size: 1.6rem;
 }
 main #projects .grid {
   position: absolute;
@@ -502,16 +544,13 @@ main #projects .grid {
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
   position: absolute;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin-top: 15vh;
 }
 main #projects .grid img {
-  width: 20vw;
+  width: 22vw;
 }
 main #projects .grid img:hover {
   transform: scale(1.15);
@@ -541,7 +580,7 @@ main #getIn h3 {
   color: white;
   text-transform: uppercase;
   font-family: "Opera Sans";
-  font-size: 1.5rem;
+  font-size: 2.5rem;
 }
 main #getIn a {
   position: absolute;
@@ -563,4 +602,96 @@ main #getIn a {
   width: 15vw;
   height: 5vh;
   margin-top: 10vh;
+  font-size: 1.6rem;
+}
+main #blog {
+  position: relative;
+  height: 100vh;
+  background-color: whitesmoke;
+}
+main #blog .blogTitle {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 10vh;
+}
+main #blog .blogTitle h3 {
+  font-family: "Open Sans";
+  font-size: 2.5rem;
+  letter-spacing: 0.5rem;
+}
+main #blog .blogTitle p {
+  margin-top: 1vh;
+  color: gray;
+  font-size: 1.6rem;
+}
+main #blog .grid {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  margin-top: 5vh;
+  position: absolute;
+  text-align: center;
+}
+main #blog .grid .iten {
+  position: relative;
+  width: 25vw;
+  height: 65vh;
+  margin-left: 2vw;
+  background-color: white;
+}
+main #blog .grid .iten:hover {
+  transform: scale(1.1);
+  box-shadow: 5px 5px 20px gray;
+  transition-duration: 0.5s;
+}
+main #blog .grid .iten div {
+  display: flex;
+}
+main #blog .grid .iten div p {
+  margin-left: 3vw;
+  margin-top: 1vh;
+  color: gray;
+  font-size: 1.5rem;
+}
+main #blog .grid .iten h3 {
+  text-transform: uppercase;
+  font-family: "Open Sans";
+  margin-top: 1vh;
+  font-size: 2rem;
+}
+main #blog .grid .iten p {
+  margin-top: 1vh;
+  color: gray;
+  font-size: 1.6rem;
+}
+main #blog .grid .iten a {
+  position: absolute;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  background-color: #000;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  width: 10vw;
+  height: 3vh;
+  margin-top: 4vh;
+  margin-left: -3vw;
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+main #blog .grid .iten img {
+  width: 25vw;
 }/*# sourceMappingURL=style.css.map */

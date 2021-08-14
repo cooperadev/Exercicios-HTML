@@ -31,21 +31,29 @@
     display: flex;
     justify-content: center;
 }
+@mixin centralizar6 {
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
 
 @mixin titleConfig {
-    @include centralizar1();
+    @include centralizar4();
+    @include centralizar6();    
     text-align: center;
-    margin-top: -35vh;
     text-transform: uppercase;
-
+    margin-top: 10vh;
     h3 {
         font-family: 'Open Sans';
+        font-size: 2.5rem;
+        letter-spacing: 0.5rem;
     }
 
     p {
         margin-top: 1vh;
-        color: #818189;
-
+        color: gray;
+        font-size: 1.6rem;
     }
 }
 
@@ -53,7 +61,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    //font-size: 62.5%;
+    font-size: 62.5%;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -79,12 +87,10 @@ header {
     }
 
     nav {
-        position: absolute;
+        position: relative;
         width: 100vw;
         display: flex;
-        font-family: 'Montserrat', sans-serif;
         font-weight: bold;
-
         img {
             display: flex;
             align-items: center;
@@ -92,21 +98,21 @@ header {
         }
 
         ul {
+            position: relative;
             display: flex;
             width: 45vw;
             text-align: center;
-            margin-left: 15%;
+            margin-left: 10vw;
 
             li {
                 list-style: none;
                 margin-left: 2.5vw;
                 @include centralizar2();
-
                 a {
-                    color: #818189;
+                    color: gray;
                     text-transform: uppercase;
                     text-decoration: none;
-
+                    font-size: 1.6rem;
                     &:hover {
                         color: white;
                     }
@@ -117,11 +123,10 @@ header {
         .iconsMenu {
             position: relative;
             display: flex;
-            margin-left: 1%;
 
             div {
-                @include centralizar3();
-                margin-left: -4.5vw;
+                @include centralizar2();
+                margin-left: -3vw;
                 width: 11vw;
 
                 img {
@@ -130,8 +135,9 @@ header {
 
                 p {
                     text-transform: uppercase;
-                    color: #818189;
+                    color: gray;
                     margin-left: 0.5vw;
+                    font-size: 1.6rem
                 }
             }
         }
@@ -140,14 +146,13 @@ header {
     .inspire {
         @include centralizar1();
         text-align: center;
-        margin-top: 7vh;
 
         h1 {
             color: white;
             text-transform: uppercase;
-            font-size: 10rem;
-            font-family: 'Montserrat';
-            letter-spacing: 1.5vw;
+            font-size: 15rem;
+            font-family: 'Open Sans';
+            letter-spacing: 1rem;
         }
 
         p {
@@ -163,16 +168,16 @@ header {
             color: black;
 
             .botao {
-                @include centralizar4();
+                @include centralizar2();
+                @include centralizar1();
                 background-color: white;
                 font-weight: bold;
-                font-family: 'Open Sans';
-                font-size: 1rem;
+                font-size: 1.3rem;
                 text-transform: uppercase;
                 text-align: center;
-                margin-top: 5vh;
+                margin-top: 25vh;
                 height: 4vh;
-                width: 20vw;
+                width: 10vw;
             }
         }
     }
@@ -183,7 +188,7 @@ main {
         position: relative;
         height: 100vh;
         width: 100vw;
-        background-color: #f8f8f8;
+        background-color: whitesmoke;
 
         .whatTitle {
             @include titleConfig();
@@ -194,7 +199,6 @@ main {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 20px;
-            margin-top: 10vh;
 
             .iten {
                 width: 35vw;
@@ -219,25 +223,26 @@ main {
                     h3 {
                         margin-top: 3vh;
                         margin-left: 2vw;
-                        font-family: 'Montserrat';
+                        font-family: 'Open Sans';
+                        font-size: 2rem;
                     }
 
                     p {
-                        font-family: 'Open Sans';
-                        color: #818189;
+                        color: gray;
                         margin-left: 2vw;
                         margin-top: 1.5vh;
-                        font-size: 0.8rem;
+                        font-size: 1.6rem;
+                        width: 18vw;
                     }
 
                     a {
                         position: absolute;
-                        font-family: 'Open Sans';
-                        color: #818189;
-                        font-weight: bolder;
+                        color: gray;
+                        font-weight: bold;
                         text-decoration: none;
-                        margin-top: 9vh;
+                        margin-top: 5vh;
                         margin-left: 7vw;
+                        font-size: 1.3rem;
                     }
                 }
             }
@@ -246,7 +251,7 @@ main {
 
     #workProcess {
         position: relative;
-        height: 100vh;
+        height: 80vh;
 
         .workTitle {
             @include titleConfig();
@@ -254,18 +259,19 @@ main {
 
         .grid {
             @include centralizar1();
-            margin-top: 1vh;
+            @include centralizar2();
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            gap: 100px;
+            gap: 2vw;
+            margin-top: -10vh;
 
             .iten {
+                @include centralizar2();
                 position: relative;
                 height: 45vh;
-                margin-left: 5vh;
 
                 .numero {
-                    font-size: 12rem;
+                    font-size: 18rem;
                     color: #b4b4b4;
                     position: absolute;
                     margin-top: 2vh;
@@ -273,19 +279,20 @@ main {
 
                 h3 {
                     position: absolute;
-                    font-size: 1.7rem;
-                    margin-top: 14.5vh;
-                    margin-left: 9vw;
+                    font-size: 3rem;
+                    margin-left: 10vw;
                     text-transform: uppercase;
                     font-family: 'Open Sans';
                 }
 
                 .text {
-                    text-align: center;
-                    font-family: 'Open Sans';
+                    z-index: 10;
+                    font-size: 1.6rem;
                     color: black;
-                    margin-top: 32vh;
-                    margin-left: 1vw;
+                    margin-top: 30vh;
+                    margin-left: 10vw;
+                    width: 15vw;
+                    font-weight: bold
                 }
             }
         }
@@ -298,9 +305,11 @@ main {
             color: white;
             width: 15vw;
             height: 5vh;
-            margin-top: 40vh;
+            margin-top: 25vh;
+            margin-left: 3vw;
             text-transform: uppercase;
             text-align: center;
+            font-size: 1.6rem;
         }
     }
 
@@ -309,7 +318,7 @@ main {
 
         .cima {
             height: 60vh;
-            background-color: #f8f8f8;
+            background-color: whitesmoke;
 
             .grid {
                 display: grid;
@@ -325,12 +334,13 @@ main {
                     &:hover {
                         transition-duration: 0.5s;
                         border-left: 4px solid #000;
-                        background-color: #f8f8f8;
+                        background-color: whitesmoke;
                     }
 
                     h3 {
                         letter-spacing: 0.5vw;
                         font-family: 'Open Sans';
+                        font-size: 1.7rem;
                         text-transform: uppercase;
                         margin-left: 4vw;
                         margin-top: 1vh;
@@ -339,7 +349,7 @@ main {
                     p {
                         font-family: 'Montserrat';
                         margin-top: 2.5vh;
-                        font-size: 1.1rem;
+                        font-size: 1.6rem;
                         margin-left: 4vw;
                     }
                 }
@@ -349,7 +359,7 @@ main {
                 position: absolute;
                 width: 65vw;
                 height: 60vh;
-                background-color: #f8f8f8;
+                background-color: whitesmoke;
                 margin-left: 27.4vw;
 
                 .textPromo {
@@ -360,18 +370,19 @@ main {
                     h3 {
                         text-transform: uppercase;
                         font-family: 'Montserrat';
-                        font-size: 1.3rem;
+                        font-size: 2.5rem;
                     }
 
                     p {
                         margin-top: 2vh;
+                        font-size: 1.6rem;
                     }
                 }
 
                 img {
                     position: absolute;
-                    width: 30vw;
-                    margin-left: 30vw;
+                    width: 32vw;
+                    margin-left: 32vw;
                     margin-top: -35vh;
                 }
             }
@@ -396,8 +407,8 @@ main {
                     p {
                         text-transform: uppercase;
                         color: white;
-                        font-family: 'Opera Sans Bold';
-                        margin-top: 0.5vh;
+                        font-size: 1.6rem;
+                        margin-top: 1vh;
                     }
                 }
             }
@@ -407,7 +418,7 @@ main {
     #peopleSay {
         height: 120vh;
         position: relative;
-        background-color: #f8f8f8;
+        background-color: whitesmoke;
 
         .sayTitle {
             @include titleConfig();
@@ -417,14 +428,18 @@ main {
             display: flex;
             position: absolute;
             @include centralizar1();
-            margin-top: 2vh;
 
             .iten {
                 position: relative;
-                background-color: #f8f8f8;
+                background-color: white;
                 width: 25vw;
                 height: 60vh;
-                margin-left: 2vw;
+                margin-left: 3vw;
+                &:hover {
+                    transform: scale(1.1);
+                    box-shadow: 5px 5px 20px gray;
+                    transition-duration: 0.5s;
+                }
 
                 hr {
                     margin-top: 2vh;
@@ -446,6 +461,7 @@ main {
                     color: #818189;
                     margin-top: 2vh;
                     font-family: 'Montserrat';
+                    font-size: 1.6rem;
                 }
 
                 .upper {
@@ -460,7 +476,7 @@ main {
             display: flex;
             @include centralizar1();
             @include centralizar5();
-            background-color: #f8f8f8;
+            background-color: hsl(0, 0%, 99.8%);
             margin-top: 50vh;
             width: 100vw;
 
@@ -481,7 +497,7 @@ main {
         nav {
             position: absolute;
             @include centralizar1();
-            margin-top: -20vh;
+            margin-top: -25vh;
 
             ul {
                 display: flex;
@@ -507,6 +523,7 @@ main {
                         text-transform: uppercase;
                         font-family: 'Opera Sans';
                         font-weight: bold;
+                        font-size: 1.6rem;
                     }
                 }
             }
@@ -514,14 +531,13 @@ main {
 
         .grid {
             @include centralizar1();
-            @include centralizar4();
             position: absolute;
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             margin-top: 15vh;
 
             img {
-                width: 20vw;
+                width: 22vw;
 
                 &:hover {
                     transform: scale(1.15);
@@ -552,7 +568,7 @@ main {
             color: white;
             text-transform: uppercase;
             font-family: 'Opera Sans';
-            font-size: 1.5rem;
+            font-size: 2.5rem;
         }
 
         a {
@@ -569,6 +585,72 @@ main {
             width: 15vw;
             height: 5vh;
             margin-top: 10vh;
+            font-size: 1.6rem;
+        }
+    }
+    #blog {
+        position: relative;
+        height: 100vh;
+        background-color: whitesmoke;
+        .blogTitle {
+            @include titleConfig();
+        }
+        .grid {
+            @include centralizar1();
+            display: flex;
+            margin-top: 5vh;
+            position: absolute;
+            text-align: center;
+            .iten {
+                position: relative;
+                width: 25vw;
+                height: 65vh;
+                margin-left: 2vw;
+                background-color: white;
+                &:hover {
+                    transform: scale(1.1);
+                    box-shadow: 5px 5px 20px gray;
+                    transition-duration: 0.5s;
+                }
+                div {
+                    display: flex;
+                    p {
+                        margin-left: 3vw;
+                        margin-top: 1vh;
+                        color: gray;
+                        font-size: 1.5rem;
+                    }
+                }
+                h3 {
+                    text-transform: uppercase;
+                    font-family: 'Open Sans';
+                    margin-top: 1vh;
+                    font-size: 2rem;
+                }
+                p {
+                    margin-top: 1vh;
+                    color: gray;
+                    font-size: 1.6rem;
+                }
+                a {
+                    @include centralizar6();
+                    position: absolute;
+                    background-color: #000;
+                    text-transform: uppercase;
+                    text-align: center;
+                    color: white;
+                    font-weight: bold;
+                    width: 10vw;
+                    height: 3vh;
+                    margin-top: 4vh;
+                    margin-left: -3vw;
+                    text-decoration: none;
+                    font-size: 1.6rem;
+                }
+                img {
+                    width: 25vw;                    
+                }
+            }
         }
     }
 }
