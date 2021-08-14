@@ -53,6 +53,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    //font-size: 62.5%;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -182,7 +183,7 @@ main {
         position: relative;
         height: 100vh;
         width: 100vw;
-        background-color: whitesmoke;
+        background-color: #f8f8f8;
 
         .whatTitle {
             @include titleConfig();
@@ -294,7 +295,7 @@ main {
             @include centralizar2();
             position: absolute;
             background-color: #000;
-            color: white; 
+            color: white;
             width: 15vw;
             height: 5vh;
             margin-top: 40vh;
@@ -305,9 +306,11 @@ main {
 
     #promo {
         position: relative;
+
         .cima {
             height: 60vh;
-            background-color: whitesmoke;
+            background-color: #f8f8f8;
+
             .grid {
                 display: grid;
                 position: absolute;
@@ -315,20 +318,24 @@ main {
                 gap: 10px;
                 height: 60vh;
                 background-color: white;
+
                 .iten {
                     background-color: white;
+
                     &:hover {
                         transition-duration: 0.5s;
                         border-left: 4px solid #000;
-                        background-color: whitesmoke;
+                        background-color: #f8f8f8;
                     }
-                    h3{
+
+                    h3 {
                         letter-spacing: 0.5vw;
                         font-family: 'Open Sans';
                         text-transform: uppercase;
                         margin-left: 4vw;
                         margin-top: 1vh;
                     }
+
                     p {
                         font-family: 'Montserrat';
                         margin-top: 2.5vh;
@@ -337,25 +344,30 @@ main {
                     }
                 }
             }
+
             .areaPromo {
                 position: absolute;
                 width: 65vw;
                 height: 60vh;
-                background-color: whitesmoke;
+                background-color: #f8f8f8;
                 margin-left: 27.4vw;
+
                 .textPromo {
                     width: 25vw;
                     margin-top: 15vh;
                     margin-left: 5vw;
+
                     h3 {
                         text-transform: uppercase;
                         font-family: 'Montserrat';
                         font-size: 1.3rem;
                     }
+
                     p {
                         margin-top: 2vh;
                     }
                 }
+
                 img {
                     position: absolute;
                     width: 30vw;
@@ -364,19 +376,23 @@ main {
                 }
             }
         }
+
         .baixo {
             position: relative;
             height: 40vh;
             background-image: url(assets/progress_bg.jpg);
             background-position: center;
             background-size: cover;
+
             .grid {
                 @include centralizar1();
                 display: flex;
                 margin-left: -5vw;
+
                 div {
                     margin-left: 10vw;
                     text-align: center;
+
                     p {
                         text-transform: uppercase;
                         color: white;
@@ -389,33 +405,40 @@ main {
     }
 
     #peopleSay {
-        height: 100vh;
+        height: 120vh;
         position: relative;
-        background-color: whitesmoke;
+        background-color: #f8f8f8;
+
         .sayTitle {
             @include titleConfig();
         }
+
         .grid {
             display: flex;
             position: absolute;
             @include centralizar1();
+            margin-top: 2vh;
+
             .iten {
                 position: relative;
-                background-color: white;
+                background-color: #f8f8f8;
                 width: 25vw;
                 height: 60vh;
                 margin-left: 2vw;
+
                 hr {
                     margin-top: 2vh;
                     @include centralizar4();
                     width: 20vw
                 }
+
                 img {
                     @include centralizar4();
                     border-radius: 50%;
                     width: 7vw;
                     margin-top: 3vh;
                 }
+
                 p {
                     @include centralizar4();
                     text-align: center;
@@ -424,12 +447,128 @@ main {
                     margin-top: 2vh;
                     font-family: 'Montserrat';
                 }
+
                 .upper {
                     text-transform: uppercase;
                     color: #000;
 
                 }
             }
+        }
+
+        .imageGrid {
+            display: flex;
+            @include centralizar1();
+            @include centralizar5();
+            background-color: #f8f8f8;
+            margin-top: 50vh;
+            width: 100vw;
+
+            img {
+                margin-left: 2vw;
+            }
+        }
+    }
+
+    #projects {
+        height: 100vh;
+        position: relative;
+
+        .projectsTitle {
+            @include titleConfig();
+        }
+
+        nav {
+            position: absolute;
+            @include centralizar1();
+            margin-top: -20vh;
+
+            ul {
+                display: flex;
+
+                li {
+                    list-style: none;
+                    margin-left: 2.5vw;
+                    width: 12vw;
+                    text-align: center;
+
+                    &:hover {
+                        background-color: #000;
+
+                        a {
+                            color: white;
+                        }
+                    }
+
+                    a {
+                        font-style: none;
+                        text-decoration: none;
+                        color: black;
+                        text-transform: uppercase;
+                        font-family: 'Opera Sans';
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+
+        .grid {
+            @include centralizar1();
+            @include centralizar4();
+            position: absolute;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            margin-top: 15vh;
+
+            img {
+                width: 20vw;
+
+                &:hover {
+                    transform: scale(1.15);
+                    transition-duration: 1s;
+                }
+            }
+        }
+    }
+
+    #getIn {
+        position: relative;
+        height: 50vh;
+        background-image: url(assets/geometric_bg.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+
+        .blackOpa {
+            position: absolute;
+            width: 100vw;
+            height: 50vh;
+            background-color: #000;
+            opacity: 0.5;
+        }
+
+        h3 {
+            @include centralizar1();
+            position: absolute;
+            color: white;
+            text-transform: uppercase;
+            font-family: 'Opera Sans';
+            font-size: 1.5rem;
+        }
+
+        a {
+            @include centralizar1();
+            @include centralizar2();
+            text-align: center;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-family: 'Opera Sans';
+            font-weight: bold;
+            position: absolute;
+            background-color: white;
+            color: #000;
+            width: 15vw;
+            height: 5vh;
+            margin-top: 10vh;
         }
     }
 }
