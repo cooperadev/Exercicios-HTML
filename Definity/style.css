@@ -694,4 +694,114 @@ main #blog .grid .iten a {
 }
 main #blog .grid .iten img {
   width: 25vw;
+}
+main #newsletter {
+  background-image: url(assets/geometric_bg.jpg);
+  height: 50vh;
+  position: relative;
+}
+main #newsletter .newsOpacity {
+  background-color: #000;
+  opacity: 0.5;
+  height: 50vh;
+  width: 100vw;
+  position: absolute;
+}
+main #newsletter form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  display: grid;
+  width: 100vw;
+  height: 35vh;
+  grid-template-columns: 1fr;
+  width: 50vw;
+}
+main #newsletter form label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+  font-family: "Montserrat";
+  letter-spacing: 0.5vh;
+  margin-top: 5vh;
+}
+main #newsletter form #email {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  font-weight: bold;
+  font-size: 2rem;
+  color: gray;
+  text-align: center;
+  width: 30vw;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  border-bottom: solid 2px gray;
+  margin-top: 15vh;
+}
+main #newsletter form #email:focus {
+  background-color: transparent;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+  border-bottom: solid 2px gray;
+}
+main #newsletter form .botao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  width: 15vw;
+  height: 8vh;
+  font-size: 1.7rem;
+  margin-top: 25vh;
+  font-weight: bold;
+  border: transparent;
+}
+main #hello {
+  position: relative;
+  height: 100vh;
+}
+main #hello .helloTitle {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 10vh;
+}
+main #hello .helloTitle h3 {
+  font-family: "Open Sans";
+  font-size: 2.5rem;
+  letter-spacing: 0.5rem;
+}
+main #hello .helloTitle p {
+  margin-top: 1vh;
+  color: gray;
+  font-size: 1.6rem;
 }/*# sourceMappingURL=style.css.map */

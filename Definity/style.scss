@@ -31,6 +31,7 @@
     display: flex;
     justify-content: center;
 }
+
 @mixin centralizar6 {
     position: absolute;
     left: 50%;
@@ -40,10 +41,11 @@
 
 @mixin titleConfig {
     @include centralizar4();
-    @include centralizar6();    
+    @include centralizar6();
     text-align: center;
     text-transform: uppercase;
     margin-top: 10vh;
+
     h3 {
         font-family: 'Open Sans';
         font-size: 2.5rem;
@@ -91,6 +93,7 @@ header {
         width: 100vw;
         display: flex;
         font-weight: bold;
+
         img {
             display: flex;
             align-items: center;
@@ -108,11 +111,13 @@ header {
                 list-style: none;
                 margin-left: 2.5vw;
                 @include centralizar2();
+
                 a {
                     color: gray;
                     text-transform: uppercase;
                     text-decoration: none;
                     font-size: 1.6rem;
+
                     &:hover {
                         color: white;
                     }
@@ -435,6 +440,7 @@ main {
                 width: 25vw;
                 height: 60vh;
                 margin-left: 3vw;
+
                 &:hover {
                     transform: scale(1.1);
                     box-shadow: 5px 5px 20px gray;
@@ -588,32 +594,39 @@ main {
             font-size: 1.6rem;
         }
     }
+
     #blog {
         position: relative;
         height: 100vh;
         background-color: whitesmoke;
+
         .blogTitle {
             @include titleConfig();
         }
+
         .grid {
             @include centralizar1();
             display: flex;
             margin-top: 5vh;
             position: absolute;
             text-align: center;
+
             .iten {
                 position: relative;
                 width: 25vw;
                 height: 65vh;
                 margin-left: 2vw;
                 background-color: white;
+
                 &:hover {
                     transform: scale(1.1);
                     box-shadow: 5px 5px 20px gray;
                     transition-duration: 0.5s;
                 }
+
                 div {
                     display: flex;
+
                     p {
                         margin-left: 3vw;
                         margin-top: 1vh;
@@ -621,17 +634,20 @@ main {
                         font-size: 1.5rem;
                     }
                 }
+
                 h3 {
                     text-transform: uppercase;
                     font-family: 'Open Sans';
                     margin-top: 1vh;
                     font-size: 2rem;
                 }
+
                 p {
                     margin-top: 1vh;
                     color: gray;
                     font-size: 1.6rem;
                 }
+
                 a {
                     @include centralizar6();
                     position: absolute;
@@ -647,10 +663,86 @@ main {
                     text-decoration: none;
                     font-size: 1.6rem;
                 }
+
                 img {
-                    width: 25vw;                    
+                    width: 25vw;
                 }
             }
+        }
+    }
+
+    #newsletter {
+        background-image: url(assets/geometric_bg.jpg);
+        height: 50vh;
+        position: relative;
+
+        .newsOpacity {
+            background-color: #000;
+            opacity: 0.5;
+            height: 50vh;
+            width: 100vw;
+            position: absolute;
+        }
+        form {
+            @include centralizar1();
+            position: absolute;
+            display: grid;
+            width: 100vw;
+            height: 35vh;
+            grid-template-columns: 1fr;
+            width: 50vw;
+            label {
+                @include centralizar2();
+                @include centralizar6();
+                color: white;
+                text-align: center;
+                text-transform: uppercase;
+                font-size: 2rem;
+                font-family: 'Montserrat';
+                letter-spacing: 0.5vh;
+                margin-top: 5vh;
+            }
+            #email {
+                @include centralizar2();
+                @include centralizar6();
+                background-color: transparent;
+                font-weight: bold;
+                font-size: 2rem;
+                color: gray;
+                text-align: center;
+                width: 30vw;
+                border-top: transparent;
+                border-left: transparent;
+                border-right: transparent;
+                border-bottom: solid 2px gray;
+                margin-top: 15vh;
+                &:focus {
+                    background-color: transparent;
+                    border-top: transparent;
+                    border-left: transparent;
+                    border-right: transparent;
+                    border-bottom: solid 2px gray;
+                } 
+            }
+            .botao {
+                @include centralizar2();
+                @include centralizar6();
+                text-transform: uppercase;
+                width: 15vw;
+                height: 8vh;
+                font-size: 1.7rem;
+                margin-top: 25vh;
+                font-weight: bold;
+                border: transparent;
+            }
+        }
+    }
+
+    #hello {
+        position: relative;
+        height: 100vh;
+        .helloTitle{
+            @include titleConfig();
         }
     }
 }
