@@ -683,6 +683,7 @@ main {
             width: 100vw;
             position: absolute;
         }
+
         form {
             @include centralizar1();
             position: absolute;
@@ -691,6 +692,7 @@ main {
             height: 35vh;
             grid-template-columns: 1fr;
             width: 50vw;
+
             label {
                 @include centralizar2();
                 @include centralizar6();
@@ -702,6 +704,7 @@ main {
                 letter-spacing: 0.5vh;
                 margin-top: 5vh;
             }
+
             #email {
                 @include centralizar2();
                 @include centralizar6();
@@ -716,14 +719,16 @@ main {
                 border-right: transparent;
                 border-bottom: solid 2px gray;
                 margin-top: 15vh;
+
                 &:focus {
                     background-color: transparent;
                     border-top: transparent;
                     border-left: transparent;
                     border-right: transparent;
                     border-bottom: solid 2px gray;
-                } 
+                }
             }
+
             .botao {
                 @include centralizar2();
                 @include centralizar6();
@@ -740,9 +745,196 @@ main {
 
     #hello {
         position: relative;
-        height: 100vh;
-        .helloTitle{
+        height: 160vh;
+
+        .helloTitle {
             @include titleConfig();
         }
+
+        .map {
+            position: absolute;
+            height: 65vh;
+            width: 100vw;
+            background-image: url(assets/map.png);
+            background-position: center;
+            background-size: cover;
+            margin-top: 25vh;
+
+            .dados {
+                background-color: white;
+                width: 60vw;
+                height: 45vh;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                text-transform: uppercase;
+                @include centralizar1();
+                letter-spacing: 0.5rem;
+                div {
+                    margin-top: 5vh;
+                    margin-left: 5vw;
+
+                    h3 {
+                        font-size: 1.5rem;
+                    }
+
+                    p {
+                        font-size: 1.5rem;
+                        color: gray;
+                        margin-top: 1vh;
+                    }
+                }
+            }
+        }
+
+        form {
+            position: absolute;
+            @include centralizar1();
+            margin-top: 45vh;
+            font-size: 1.6rem;
+            text-transform: uppercase;
+            display: grid;
+            grid-template-columns: 1fr 1fr ;
+            label {
+                font-weight: bold;
+                margin-top: 2vh;
+                font-size: 1.65rem;
+                font-weight: bold;
+            }
+            input {
+                color: gray;
+                margin-top: 2vh;
+            }
+            #message {
+                height: 30vh;
+                width: 15vw;
+                text-align: initial;
+            }
+            #name {
+                height: 5vh;
+                
+            }
+            #email {
+                height: 5vh;
+            }
+            #submit {
+                height: 5vh;
+                width: 10vw;  
+                margin-left: 18vw;
+                margin-top: 50vh;
+                border: transparent;
+                background-color: #000;
+                color: #fff;
+                text-align: center;
+                text-transform: uppercase;
+                position: absolute;             
+            }
+            
+        }
+    }
+}
+
+footer {
+    position: relative;
+    background-color: #000;
+    height: 70vh;
+    .conteudo {
+        @include centralizar1();
+        @include centralizar5();
+        height: 40vh;
+        width: 80vw;
+        display: flex;
+        .iten {
+            margin-left: 2vw;
+            width: 25vw;
+            .redesSociais {
+                display: flex;
+                margin-top: 2vh;
+                img {
+                    width: 1.8vw;
+                    margin-left: 1vw;
+                }
+            }
+            hr {
+                width: 20vw;
+                height: 1px;
+                margin-top: 2vh;
+                border: transparent;
+                background-color: gray;
+            }
+            h3 {
+                font-size: 2.3rem;
+                text-transform: uppercase;
+                font-family: 'Open Sans';
+                color: white;
+                letter-spacing: 0.5vh;
+            }
+            p {
+                color: gray;
+                font-size: 1.4rem;
+                margin-top: 5vh;
+            }
+            a {
+                color: white;
+                font-weight: bold;
+            }
+            .instaGrid {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                margin-top: 5vh;
+                img {
+                    width: 7vw;
+                    height: 15vh;
+                }
+            }
+            .twitterFeed {
+                .iten {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-rows: 1fr;
+                    img {
+                        position: absolute;
+                        margin-top: 5vh;
+                        margin-left: -1vw;
+                        width: 1.5vw;
+                    }
+                    p {
+                        margin-top: 5vh;
+                        margin-left: 1vw;
+                    }
+                }
+            }
+            input {
+                margin-top: 5vh;
+                height: 6vh;
+                width: 20vw;
+                background-color: #333333;
+                color: whitesmoke;
+                font-size: 1.6rem;
+                text-align: center;
+                border: transparent;
+            }
+        }
+    }
+    .cop {
+        @include centralizar6();
+        top: 100%;
+        background-color: #333333;
+        height: 5vh;
+        width: 100vw;  
+        text-transform: uppercase;
+        font-size: 1.6rem;
+        p {
+            color: whitesmoke;
+            margin-left: 2vw;
+            margin-top: 1.5vh;
+            position: absolute;
+        }   
+        a {
+            color: whitesmoke;
+            text-decoration: none;
+            margin-left: 85vw;
+            margin-top: 1.5vh;
+            position: absolute;
+        }   
     }
 }
