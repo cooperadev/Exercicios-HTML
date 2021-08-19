@@ -1,6 +1,48 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans+Bold:wght@800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@media (min-width: 1440px) {
+  #home nav {
+    margin-left: -0.5vw;
+  }
+  #home nav a {
+    font-size: 1.7rem;
+  }
+  #home .iconsMenu {
+    margin-left: 3.5vw;
+  }
+  #home .iconsMenu p {
+    font-size: 1.7rem;
+  }
+  #home .inspire a {
+    margin-top: -5vh;
+  }
+}
+@media (min-width: 100px) {
+  #home .iconsMenu {
+    margin-left: 2vw;
+  }
+  #home .iconsMenu p {
+    font-size: 1.3rem;
+  }
+  #home a {
+    font-size: 1.3rem;
+  }
+
+  #whatWeDo .iten {
+    height: 30vh;
+  }
+  #whatWeDo .iten h3 {
+    font-size: 1.1rem;
+  }
+  #whatWeDo .iten p {
+    font-size: 1.2rem;
+  }
+
+  #workProcess .iten .text {
+    font-size: 0.5rem;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -123,7 +165,7 @@ header .inspire a .botao {
   font-size: 1.3rem;
   text-transform: uppercase;
   text-align: center;
-  margin-top: 25vh;
+  margin-top: 30vh;
   height: 4vh;
   width: 10vw;
 }
@@ -162,20 +204,24 @@ main #whatWeDo .grid {
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
+  margin-top: 2vh;
 }
 main #whatWeDo .grid .iten {
   width: 35vw;
   height: 30vh;
   background-color: white;
-  box-shadow: 5px 5px 10px gray;
   display: flex;
 }
 main #whatWeDo .grid .iten:hover {
   transform: scale(1.1);
   transition-duration: 1s;
+  box-shadow: 5px 5px 10px gray;
 }
 main #whatWeDo .grid .iten img {
   width: 14vw;
@@ -202,13 +248,13 @@ main #whatWeDo .grid .iten div a {
   color: gray;
   font-weight: bold;
   text-decoration: none;
-  margin-top: 5vh;
+  margin-top: 2vh;
   margin-left: 7vw;
   font-size: 1.3rem;
 }
 main #workProcess {
   position: relative;
-  height: 80vh;
+  height: 100vh;
 }
 main #workProcess .workTitle {
   display: block;
@@ -289,7 +335,7 @@ main #workProcess .freeQuote {
   color: white;
   width: 15vw;
   height: 5vh;
-  margin-top: 25vh;
+  margin-top: 27vh;
   margin-left: 3vw;
   text-transform: uppercase;
   text-align: center;
@@ -355,9 +401,9 @@ main #promo .cima .areaPromo .textPromo p {
 }
 main #promo .cima .areaPromo img {
   position: absolute;
-  width: 32vw;
+  width: 30vw;
   margin-left: 32vw;
-  margin-top: -35vh;
+  margin-top: -39vh;
 }
 main #promo .baixo {
   position: relative;
@@ -386,9 +432,9 @@ main #promo .baixo .grid div p {
   margin-top: 1vh;
 }
 main #peopleSay {
-  height: 120vh;
+  height: 145vh;
   position: relative;
-  background-color: whitesmoke;
+  background-color: #f8f8f8;
 }
 main #peopleSay .sayTitle {
   display: block;
@@ -425,7 +471,7 @@ main #peopleSay .grid .iten {
   position: relative;
   background-color: white;
   width: 25vw;
-  height: 60vh;
+  height: 75vh;
   margin-left: 3vw;
 }
 main #peopleSay .grid .iten:hover {
@@ -472,15 +518,15 @@ main #peopleSay .imageGrid {
   transform: translate(-50%, -50%);
   display: flex;
   justify-content: center;
-  background-color: #fefefe;
-  margin-top: 50vh;
+  background-color: #f8f8f8;
+  margin-top: 60vh;
   width: 100vw;
 }
 main #peopleSay .imageGrid img {
   margin-left: 2vw;
 }
 main #projects {
-  height: 100vh;
+  height: 120vh;
   position: relative;
 }
 main #projects .projectsTitle {
@@ -512,7 +558,7 @@ main #projects nav {
   left: 50%;
   margin-right: -50%;
   transform: translate(-50%, -50%);
-  margin-top: -25vh;
+  margin-top: -30vh;
 }
 main #projects nav ul {
   display: flex;
@@ -547,7 +593,7 @@ main #projects .grid {
   position: absolute;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  margin-top: 15vh;
+  margin-top: 10vh;
 }
 main #projects .grid img {
   width: 22vw;
@@ -645,7 +691,7 @@ main #blog .grid {
 main #blog .grid .iten {
   position: relative;
   width: 25vw;
-  height: 65vh;
+  height: 72vh;
   margin-left: 2vw;
   background-color: white;
 }

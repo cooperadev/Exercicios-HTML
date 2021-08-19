@@ -1,0 +1,66 @@
+@media (min-width: 1440px) {
+    #home {
+        nav {
+            margin-left: -0.5vw;
+
+            a {
+                font-size: 1.7rem;
+            }
+        }
+
+        .iconsMenu {
+            margin-left: 3.5vw;
+
+            p {
+                font-size: 1.7rem;
+            }
+        }
+
+        .inspire {
+            a {
+                margin-top: -5vh;
+
+                .botao {
+                }
+            }
+        }
+    }
+
+}
+
+@media (min-width: 100px) {
+    #home {
+        .iconsMenu {
+            margin-left: 2vw;
+
+            p {
+                font-size: 1.3rem;
+            }
+        }
+
+        a {
+            font-size: 1.3rem;
+        }
+    }
+
+    #whatWeDo {
+        .iten {
+            height: 30vh;
+
+            h3 {
+                font-size: 1.1rem;
+            }
+
+            p {
+                font-size: 1.2rem;
+            }
+        }
+    }
+    #workProcess {
+        .iten {
+            .text {
+                font-size: 0.5rem;
+            }
+        }
+    }
+}
