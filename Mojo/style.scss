@@ -1,0 +1,108 @@
+$SourceSansPro: 'Source Sans Pro',
+sans-serif !global;
+$Monsterrat: 'Montserrat',
+sans-serif !global;
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+@mixin backgroundConfig ($color) {
+    background: {
+        repeat: no-repeat;
+        size: cover;
+        position: center;
+        color: $color;
+    }
+}
+
+@mixin escurecer ($porcentagem) {
+    filter: brightness($porcentagem);
+}
+
+@mixin escurecerBackground ($url) {
+    background: linear-gradient(#00000080,
+            #00000080), url($url);
+}
+
+@mixin centralizarVertical {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@mixin centralizarViewport {
+    // O PAI DEVE OBRIGATORIAMENTE TER POSITION RELATIVE ////
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font: {
+        size: 62.5%;
+        family: $SourceSansPro;
+    }
+}
+
+#home {
+    @include escurecerBackground('assets/hero.jpg');
+    @include backgroundConfig(transparent);
+    position: relative;
+    width: 100%;
+    height: 100vh;
+
+    #cabecalho {
+        width: 100%;
+        height: 8vh;
+        display: flex;
+
+        .logo {
+            @include centralizarVertical();
+            margin-left: 5vw;
+        }
+
+        .menu {
+            margin: {
+                left: 30vw;
+            }
+            ul {
+                @include centralizarVertical();
+                display: flex;
+
+                li {
+                    list-style: none;
+
+                    margin: {
+                        left: 2vw;
+                    }
+
+                    a {
+                        text: {
+                            decoration: none;
+                            transform: uppercase;
+                        }
+
+                        font: {
+                            size: 1.5rem;
+                            family: $Monsterrat;
+                        }
+
+                        color: white;
+
+                    }
+
+                    .home {
+                        border-bottom: 2px solid white;
+                    }
+                }
+            }
+        }
+    }
+}
