@@ -46,6 +46,38 @@ sans-serif !global;
     justify-content: center;
 }
 
+@mixin sectionTitle {
+    letter-spacing: .5vw;
+            position: relative;
+            text: {
+                align: center;
+                transform: uppercase;
+            }
+            margin-top: 7vh;
+            font: {
+                family: $Monsterrat;
+                weight: bold;
+            }
+            .top {
+                font-size: 1.8rem;
+                color: gray;
+            }
+            .middle {
+                
+                font: {
+                    size: 3rem;
+                }
+            }
+            hr {
+                @include centralizarViewport();
+                width: 16.5vw;
+                height: 1px;
+                margin-top: 6.5vh;
+                background-color: gray;
+                border: .5px gray solid;
+            }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -153,7 +185,7 @@ sans-serif !global;
 
 #website {
     position: relative;
-    .skils {
+    #skils {
         width: 100%;
         height: 30vh;
         display: grid;
@@ -194,10 +226,62 @@ sans-serif !global;
             }
         }
     }
-    .aboutUs {
+    #aboutUs {
         position: relative;
         width: 100%;
         height: 100vh;
+        .sectionTitle {
+            @include sectionTitle();
+        }
+        .boldText {
+            position: absolute;
+            width: 30vw;
+            margin: {
+                top: 10vh;
+            }
+            font: {
+                size: 4rem;
+                weight: bold;
+            }
+            text: {
+                align: right;
+            }
+            .experience {
+                text-decoration: underline;
+            }                        
+        }
+        .lorem {
+            height: 20vh;
+            width: 60vw;
+            color: gray;
+            font: {
+                size: 2.4rem
+            }
+            margin: {
+                left: 32.5vw;
+                top: 10vh;
+            }
+        }
+        .list {
+            list-style-image: url("assets/right-arrow.png");
+            color: gray;
+            font: {
+                size: 3.5rem;
+            }
+            margin: {
+                left: 40vw;
+                top: 5vh;
+            }
+        }
+        img {
+            display: flex;
+            width: 70vw; 
+            margin: {
+                top: 5vh;
+                left: auto;
+                right: auto;
+            }    
+        }
     }
 }
 
