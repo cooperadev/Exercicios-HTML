@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=MontserratBold&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  background-image: url("/assets/home-page/hero.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  width: auto;
+  height: 100vh;
+}
+header nav {
+  position: relative;
+  width: auto;
+  height: 8vh;
+  display: flex;
+}
+header nav h1 {
+  display: flex;
+  align-items: center;
+  font-size: 3rem;
+  font-family: "MontserratBold", sans-serif;
+  text-transform: uppercase;
+  margin-left: 5vw;
+}
+header nav ul {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+header nav ul li {
+  list-style: none;
+  width: 11vw;
+}
+header nav ul li a {
+  color: black;
+  font-size: 1.7rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+header #creative {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  width: 60vw;
+  height: 60vh;
+}
+header #creative p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  letter-spacing: 1vw;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 9rem;
+  font-family: "MontserratBold", sans-serif;
+}
+
+main {
+  position: relative;
+  width: auto;
+  height: auto;
+}
+main #about {
+  position: relative;
+  width: auto;
+  height: 100vh;
+}
+main #about .aboutTitle {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 55vw;
+  margin-top: 15vh;
+}
+main #about .aboutTitle p {
+  font-size: 3rem;
+  font-family: "MontserratBold", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+main #about img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+main #about #yellowDiv {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  width: 20vw;
+  height: 40vh;
+  background-color: #ffd96d;
+}
+main #about .textAbout {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  color: gray;
+  width: 80vw;
+  margin-top: 30vh;
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */

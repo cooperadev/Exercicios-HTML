@@ -1,0 +1,169 @@
+$MontserratBold: "MontserratBold", sans-serif;
+$Montserrat: "Montserrat", sans-serif;
+$Waterspout: #92fcf9;
+$Dandelion: #ffd96d;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: $Montserrat;
+}
+
+@mixin background($url) {
+    background-image: url($url);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  @mixin container($width, $height) {
+    position: relative;
+    width: $width;
+    height: $height;
+  }
+  
+  @mixin centralizarVertical {
+    display: flex;
+    align-items: center;
+  }
+  
+  @mixin centralizarBlock {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  @mixin centralizar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+  }
+
+header {
+  @include background("/assets/home-page/hero.jpg");
+  @include container(auto, 100vh);
+
+  nav {
+    @include container(auto, 8vh);
+    display: flex;
+
+    h1 {
+      @include centralizarVertical();
+      font: {
+        size: 3rem;
+        family: $MontserratBold;
+      }
+      text: {
+        transform: uppercase;
+      }
+      margin: {
+        left: 5vw;
+      }
+    }
+
+    ul {
+      @include centralizarVertical();
+      margin: {
+        left: auto;
+      }
+
+      li {
+        list-style: none;
+        width: 11vw;
+        a {
+          color: black;
+          font: {
+            size: 1.7rem;
+            weight: bold;
+          }
+          text: {
+            transform: uppercase;
+            decoration: none;
+          }
+        }
+      }
+    }
+  }
+
+  #creative {
+    @include centralizar();
+    width: 60vw;
+    height: 60vh;
+
+    p {
+      @include centralizar();
+      color: white;
+      letter-spacing: 1vw;
+      text: {
+        align: center;
+        transform: uppercase;
+      }
+      font: {
+        size: 9rem;
+        family: $MontserratBold;
+      }
+    }
+  }
+
+}
+
+main {
+  @include container(auto, auto);
+
+  #about {
+    @include container(auto, 100vh);
+
+    .aboutTitle {
+        @include centralizarBlock();
+        width: 55vw;
+        margin-top: 15vh;
+        p {
+            font: {
+                size: 3rem;
+                family: $MontserratBold;
+                weight: bold;
+            }
+            text: {
+                transform: uppercase;
+                align: center;
+            }
+        }
+    }
+
+    img {
+        @include centralizar();
+    }
+
+    #yellowDiv {
+        @include centralizar();
+        width: 20vw;
+        height: 40vh;
+        background-color: $Dandelion;
+
+    }
+
+    .textAbout {
+        @include centralizar();
+        color: gray;
+        width: 80vw;
+        margin: {
+            top: 30vh;
+        }
+        font: {
+            size: 1.6rem;
+        }
+        text: {
+            align: center;
+        }
+    }
+
+  }
+  
+}
+
+@import url("https://fonts.googleapis.com/css2?family=MontserratBold&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
