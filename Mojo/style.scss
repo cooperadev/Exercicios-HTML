@@ -451,7 +451,7 @@ $Monsterrat: "Montserrat", sans-serif;
         top: 17vh;
       }
       #img5 {
-        @include escurecerBackground("assets/product_06.jpg")
+        @include escurecerBackground('assets/product_06.jpg');
       }
       .iten {
         width: 20vw;
@@ -607,7 +607,130 @@ $Monsterrat: "Montserrat", sans-serif;
   #work {
       position: relative;
       width: 100%;
-      height: 50vh;
+      height: 65vh;
+      @include escurecerBackground('assets/cat_bg.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      .sectionTitle {
+        @include sectionTitle();
+        position: relative;
+        color: white;
+        margin-top: 5vh;
+      }
+      .lorem {
+        color: white;
+        font-size: 1.6rem;
+        @include centralizarViewport();
+        @include centralizarFlex();
+        width: 45vw;
+      }
+      .more {
+        position: absolute;
+        text-align: center;
+        width: 10vw;
+        height: auto + 1.5px;
+        border: 1px white solid;
+        margin: {
+          top: 45vh;
+          left: 40vw;
+        }
+        text: {
+          transform: uppercase;
+          decoration: none;
+        }
+        color: white;
+        font: {
+          size: 1.75rem;
+        }
+      }
+  }
+  #partners {
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    .sectionTitle {
+      @include sectionTitle();
+    }
+    .flex {
+      @include centralizarFlex();
+      @include centralizarhorizontal();
+      margin-top: 3vh;
+    }
+  }
+}
+
+footer {
+  position: relative;
+  background-color: #0e0e0e;
+  width: 100%;
+  height: 40vh;
+  color: white;
+  #contact {
+    @include centralizarFlex();
+    position: relative;
+    width: 100%;
+    height: 30vh;
+    text-align: center;
+    div {
+      width: 25%;
+      h4 {
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        margin-top: 1vh;
+      }
+      p {
+        font-size: 1.6rem;
+        color:gray;
+        margin-top: 1vh;
+      }
+    }
+  }
+  #cop {
+    position: relative;
+    width: 100%;
+    height: 5vh;
+    p {
+      width: 100%;
+      height: auto;
+      color: white;
+      font-size: 1.6rem;
+      text-align: center;
+      a {
+        color: white;
+        font-size: 1.6rem;
+      }
+    }
+  }
+  #redesSociais {
+    position: relative;
+    background-color: #0e0e0e;
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    .iten {
+      width: 25%;
+      height: 15vh;
+      position: relative;
+      &:hover {
+        transform: scale(0.9);
+      }
+      img {
+        @include centralizarViewport();
+      }
+    }
+    .facebook {
+      background-color: #2a2aff;
+    }
+    .twitter {
+      background-color: #0066ff;
+    }
+    .google {
+      background-color: red;
+    }
+    .pinterest {
+      background-color: #8f0000;
+    }
   }
 }
 
