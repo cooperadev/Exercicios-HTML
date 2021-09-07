@@ -123,5 +123,150 @@ main #about .textAbout {
   font-size: 1.6rem;
   text-align: center;
 }
+main #skils {
+  position: relative;
+  width: auto;
+  height: 70vh;
+  background-color: whitesmoke;
+}
+main #skils .flex {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+}
+main #skils .flex .iten {
+  margin-left: 2vw;
+  width: 20vw;
+  height: 55vh;
+  background-color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+main #skils .flex .iten h3 {
+  margin-top: 1.5vh;
+  font-size: 2rem;
+  font-weight: bold;
+}
+main #skils .flex .iten img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2vh;
+}
+main #skils .flex .iten .flexStars {
+  display: flex;
+}
+main #skils .flex .iten .porcentagem {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+main #skils .flex .iten h4 {
+  margin-top: 4vh;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+main #skils .flex .iten hr {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10vw;
+  height: 4px;
+  border-radius: 50px;
+  background-color: black;
+  border: black solid 1px;
+  margin-top: 1vh;
+}
+main #offers {
+  position: relative;
+  width: auto;
+  height: 100vh;
+}
+main #offers .titulo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30vw;
+  margin-top: 10vh;
+  text-align: center;
+}
+main #offers .titulo h2 {
+  color: black;
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: "MontserratBold", sans-serif;
+  text-transform: uppercase;
+}
+main #offers .titulo h4 {
+  color: gray;
+  font-style: italic;
+  font-size: 1.7rem;
+}
+main #offers .titulo hr {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 6vw;
+  background-color: black;
+  height: 4px;
+  border: black solid 1px;
+  border-radius: 10px;
+  margin-top: 0.5rem;
+}
+main #offers .grid {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-top: 5vh;
+}
+main #offers .grid .iten {
+  width: 30vw;
+  height: 40vh;
+  display: flex;
+}
+main #offers .grid .iten .img {
+  height: 35vh;
+  width: 5vw;
+}
+main #offers .grid .iten .text h2 {
+  width: 12.5vw;
+  margin-top: 1vh;
+  margin-left: 1vw;
+  font-size: 2rem;
+  font-family: "MontserratBold", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+main #offers .grid .iten hr {
+  margin-top: 1vh;
+  margin-left: 1vw;
+  width: 10vw;
+  height: 4px;
+  background-color: black;
+  border-radius: 10px;
+  border: black solid 1px;
+}
+main #offers .grid .iten .lorem {
+  margin-top: 1vh;
+  margin-left: 1vw;
+  font-size: 1.5rem;
+  font-style: italic;
+}
+main #offers .grid .iten a {
+  margin-top: 3vh;
+  margin-left: 1vw;
+  color: black;
+  font-size: 1.6rem;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+}
 
 /*# sourceMappingURL=style.css.map */
