@@ -335,6 +335,188 @@ main {
       }
     }
   }
+
+  #facts {
+    @include background('/assets/home-page/facts-bg.jpg');
+    @include container(auto, 70vh);
+    .title {
+      position: absolute;
+      margin: {
+        left: 10vw;
+        top: 5vh;
+      }
+      text: {
+        align: justify;
+      }
+      width: 30vw;
+      h2 {
+        font: {
+          size: 3rem;
+          weight: bold;
+          family: $MontserratBold;
+        }
+        text: {
+          transform: uppercase;
+        }
+      }
+      p {
+        color: gray;
+        font: {
+          size: 1.6rem;
+        }
+      }
+      hr {
+        width: 15vw;
+        height: 4px;
+        background-color: black;
+        margin-top: 1vh;
+        border: {
+          radius: 10px;
+          color: black;
+          style: solid;
+        }
+      }
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      margin-top: 25vh;
+      margin-left: 9vw;
+      position: absolute;
+      .iten {
+        padding: 15px;
+        text: {
+          transform: uppercase;
+        }
+        h2 {
+          font: {
+            size: 4rem;
+            family: $MontserratBold;
+          }         
+        }
+        p {
+          font: {
+            size: 1.6rem;
+          }
+        }
+      }
+    }
+  }
+
+  #contato {
+    @include container(auto, 100vh);
+    .titulo {
+      @include titulo();
+    }
+    .adress {
+      @include centralizarBlock();
+      text-align: center; 
+      margin-top: 5vh;
+      .numero {
+        color: blue;
+        font: {
+          size: 3.5rem;
+          weight: bold;
+        }
+        text: {
+          transform: uppercase;
+        }
+      }
+      .endereco {
+        color: gray;
+        font: {
+          size: 1.6rem;
+          style: italic;
+        }
+      }
+    }
+    form {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      border: transparent;
+      input {
+        @include centralizarBlock();
+        width: 15vw;
+        padding: 15px;
+        margin-top: 5vh;
+        font: {
+          size: 1.6rem;
+        }
+        border: {
+          top: transparent;
+          right: transparent;
+          left: transparent;
+          bottom: solid gray 2px;
+        }
+      }
+      #mensagem {
+        grid-column: 1/4;
+        width: 60vw;
+        height: 30vh;
+      }
+      #enviar {
+        background-color: black;
+        color: white;
+        text-transform: uppercase;
+        grid-column: 2/3;
+      }
+    }
+  }
+}
+
+footer {
+  @include container(auto, 20vh);
+  background-color: $Dandelion;
+  h1 {
+    @include centralizar();
+    width: 15vw;
+    margin: {
+      top: -8vh;
+    }
+    text: {
+      align: center;
+      transform: uppercase;
+    }
+    font: {
+      size: 3rem;
+      weight: bold;
+      family: $MontserratBold;
+    }
+  }
+  nav {
+    @include container(40vw, auto);
+    @include centralizar();
+    ul {
+      display: flex;
+      li {
+        list-style: none;
+        padding: 15px;
+        a {
+          @include centralizarBlock();
+          color: black;
+          text: {
+            decoration: none;
+            transform: uppercase;
+          }
+          font: {
+            size: 1.6rem;
+            weight: bold;
+          }
+        }
+      }
+    }
+  }
+  .copyright {
+    @include centralizar();
+    text-align: center;
+    font: {
+      size: 1.6rem;
+    }
+    margin-top: 8vh;
+    a {
+      font-size: 1.6rem;
+    }
+  }
 }
 
 @import url("https://fonts.googleapis.com/css2?family=MontserratBold&display=swap");
