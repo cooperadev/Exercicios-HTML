@@ -3,6 +3,11 @@
   width: $width;
   height: $height;
 }
+@mixin Vertical {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
 * {
   margin: 0;
   padding: 0;
@@ -16,6 +21,29 @@ header {
     @include container(auto, 15vh);
     background: #322c2c;
     //box-shadow: 5px 0px 15px black;
+    img {
+      @include Vertical();
+      margin-left: 10vw;
+    }
+    ul {
+      @include Vertical();
+      display: flex;
+      margin-left: 50vw;
+      li {
+        list-style: none;
+        padding: 0.5rem;
+        a {
+          text: {
+            decoration: none;
+            transform: uppercase;
+          }
+          font: {
+            size: 1.6rem;
+          }
+          color: white;
+        }
+      }
+    }
   }
   .Wellcome {
     @include container(auto, 62vh);
@@ -24,15 +52,42 @@ header {
     @include container(auto, 23vh);
     background: #1e1c1d;
   }
-  .SubMenu{
-      @include container(auto, 3vh);
-      background-color: #3e3838;
+  .SubMenu {
+    @include container(auto, 5vh);
+    background-color: #3e3838;
+    display: flex;
+    justify-content: space-between;
+    .iconMap {
+      margin-left: 5vw;
+    }
+    .local {
+      color: white;
+      margin-left: 6vw;
+      p {
+        text-align: center;
+        font-size: 1.6rem;
+      }
+    }
+    ul {
+      display: flex;
+      margin-left: -5vw;
+      li {
+        list-style: none;
+        padding: 5px;
+        a {
+          font: {
+            size: 1.6rem;
+          }
+          color: white;
+        }
+      }
+    }
   }
 }
 main {
-    @include container(auto, 100vh);
+  @include container(auto, 100vh);
 }
 footer {
-    @include container(auto, 50vh);
-    background: #f5f5f5;
+  @include container(auto, 50vh);
+  background: #f5f5f5;
 }
